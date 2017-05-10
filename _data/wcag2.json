@@ -1,15 +1,15 @@
 {"principles": [
   {
-    "id": "WCAG2:perceivable",
+    "id": "WCAG2:知覚可能",
     "num": "1",
-    "handle": "Perceivable",
-    "title": "Information and user interface components must be presentable to users in ways they can perceive.",
+    "handle": "1 知覚可能",
+    "title": "情報及びユーザインタフェース コンポーネントは、利用者が知覚できる方法で利用者に提示可能でなければならない。",
     "guidelines": [
       {
         "id": "WCAG2:text-equiv",
         "num": "1.1",
-        "handle": "Text Alternatives",
-        "title": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+        "handle": "テキストによる代替 (text alternative)",
+        "title": "1.1 すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、テキストによる代替を提供すること。",
         "techniques": [{"advisory": [{
           "id": "TECH:future1",
           "title": "Providing sign language videos for audio-only files"
@@ -18,34 +18,34 @@
           "id": "WCAG2:text-equiv-all",
           "num": "1.1.1",
           "level": "A",
-          "handle": "Non-text Content",
-          "title": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
+          "handle": "非テキストコンテンツ (non-text content)",
+          "title": "利用者に提示されるすべての非テキストコンテンツには、同等の目的を果たすテキストによる代替が提供されている。",
           "details": [{
             "type": "ulist",
             "items": [
               {
-                "handle": "Controls, Input",
-                "text": "If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)"
+                "handle": "コントロール、入力",
+                "text": "非テキストコンテンツが、コントロール又は利用者の入力を受け付けるものであるとき、その目的を説明する名前 (name) を提供している。(コントロール及び利用者の入力を受け入れるコンテンツに関するその他の要件は、ガイドライン 4.1を参照。)"
               },
               {
-                "handle": "Time-Based Media",
-                "text": "If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)"
+                "handle": "時間依存メディア",
+                "text": "非テキストコンテンツが、時間に依存したメディアであるとき、テキストによる代替は、少なくとも、その非テキストコンテンツを識別できる説明を提供している。(メディアに関するその他の要件は、ガイドライン 1.2を参照。)"
               },
               {
-                "handle": "Test",
-                "text": "If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content."
+                "handle": "テスト",
+                "text": "非テキストコンテンツが、テキストで提示されると無効になるテスト又は演習のとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。"
               },
               {
-                "handle": "Sensory",
-                "text": "If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content."
+                "handle": "感覚的",
+                "text": "非テキストコンテンツが、特定の感覚的体験を創り出すことを主に意図しているとき、テキストによる代替は、少なくともその非テキストコンテンツを識別できる説明を提供している。"
               },
               {
                 "handle": "CAPTCHA",
-                "text": "If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities."
+                "text": "非テキストコンテンツが、コンピュータではなく人間がコンテンツにアクセスしていることを確認する目的で用いられているとき、テキストによる代替は、その非テキストコンテンツの目的を特定し、説明している。なおかつ、他の感覚による知覚に対応して出力する CAPTCHA の代替形式を提供することで、様々な障害に対応している。"
               },
               {
-                "handle": "Decoration, Formatting, Invisible",
-                "text": "If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology."
+                "handle": "装飾、整形、非表示",
+                "text": "非テキストコンテンツが、純粋な装飾である、見た目の整形のためだけに用いられている、又は利用者に提供されるものではないとき、支援技術が無視できるように実装されている。"
               }
             ]
           }],
@@ -56,57 +56,57 @@
                 "techniques": [
                   {
                     "id": "TECH:G94",
-                    "title": "Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content",
+                    "title": "非テキストコンテンツに対して、それと同じ目的を果たし、同じ情報を提供する、簡潔な代替テキストを提供する",
                     "using": [{"group": {
                       "title": "Short text alternative techniques for Situation A:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
-                          "title": "Using aria-label to provide labels for objects"
+                          "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                         },
                         {
                           "id": "TECH:ARIA10",
-                          "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                          "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                         },
                         {
                           "id": "TECH:G196",
-                          "title": "Using a text alternative on one item within a group of images that describes all items in the group"
+                          "title": "画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する"
                         },
                         {
                           "id": "TECH:FLASH1",
-                          "title": "Setting the name property for a non-text object"
+                          "title": "非テキストオブジェクトに名前プロパティを設定する"
                         },
                         {
                           "id": "TECH:FLASH5",
-                          "title": "Combining adjacent image and text buttons for the same resource"
+                          "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                         },
                         {
                           "id": "TECH:FLASH28",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash"
+                          "title": "Flash で ASCII アート、顔文字、リート語の代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H2",
-                          "title": "Combining adjacent image and text links for the same resource"
+                          "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                         },
                         {
                           "id": "TECH:H35",
-                          "title": "Providing text alternatives on applet elements"
+                          "title": "applet 要素に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H37",
-                          "title": "Using alt attributes on img elements"
+                          "title": "img 要素の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H53",
-                          "title": "Using the body of the object element"
+                          "title": "object 要素のボディを使用する"
                         },
                         {
                           "id": "TECH:H86",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak"
+                          "title": "ASCII アート、顔文字、及びリート語に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:PDF1",
-                          "title": "Applying text alternatives to images with the Alt entry in PDF documents"
+                          "title": "PDF 文書の Alt エントリによって画像に代替テキストを適用する"
                         },
                         {
                           "id": "TECH:SL5",
@@ -122,58 +122,58 @@
                 "techniques": [
                   {
                     "id": "TECH:G95",
-                    "title": "Providing short text alternatives that provide a brief description of the non-text content",
+                    "title": "非テキストコンテンツの簡単な説明を提供する、簡潔な代替テキストを提供する",
                     "using": [
                       {"group": {
                         "title": "Short text alternative techniques for Situation B:",
                         "techniques": [
                           {
                             "id": "TECH:ARIA6",
-                            "title": "Using aria-label to provide labels for objects"
+                            "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                           },
                           {
                             "id": "TECH:ARIA10",
-                            "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                            "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                           },
                           {
                             "id": "TECH:G196",
-                            "title": "Using a text alternative on one item within a group of images that describes all items in the group"
+                            "title": "画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する"
                           },
                           {
                             "id": "TECH:FLASH1",
-                            "title": "Setting the name property for a non-text object"
+                            "title": "非テキストオブジェクトに名前プロパティを設定する"
                           },
                           {
                             "id": "TECH:FLASH5",
-                            "title": "Combining adjacent image and text buttons for the same resource"
+                            "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                           },
                           {
                             "id": "TECH:FLASH28",
-                            "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash"
+                            "title": "Flash で ASCII アート、顔文字、リート語の代替テキストを提供する"
                           },
                           {
                             "id": "TECH:H2",
-                            "title": "Combining adjacent image and text links for the same resource"
+                            "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                           },
                           {
                             "id": "TECH:H35",
-                            "title": "Providing text alternatives on applet elements"
+                            "title": "applet 要素に代替テキストを提供する"
                           },
                           {
                             "id": "TECH:H37",
-                            "title": "Using alt attributes on img elements"
+                            "title": "img 要素の alt 属性を使用する"
                           },
                           {
                             "id": "TECH:H53",
-                            "title": "Using the body of the object element"
+                            "title": "object 要素のボディを使用する"
                           },
                           {
                             "id": "TECH:H86",
-                            "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak"
+                            "title": "ASCII アート、顔文字、及びリート語に代替テキストを提供する"
                           },
                           {
                             "id": "TECH:PDF1",
-                            "title": "Applying text alternatives to images with the Alt entry in PDF documents"
+                            "title": "PDF 文書の Alt エントリによって画像に代替テキストを適用する"
                           },
                           {
                             "id": "TECH:SL5",
@@ -186,35 +186,35 @@
                         "techniques": [
                           {
                             "id": "TECH:ARIA15",
-                            "title": "Using aria-describedby to provide descriptions of images"
+                            "title": "画像の説明を提供するために aria-describedby を使用する"
                           },
                           {
                             "id": "TECH:G73",
-                            "title": "Providing a long description in another location with a link to it that is immediately adjacent to the non-text content"
+                            "title": "非テキストコンテンツのすぐ隣に別の場所へのリンクを置き、その別の場所で長い説明を提供する"
                           },
                           {
                             "id": "TECH:G74",
-                            "title": "Providing a long description in text near the non-text content, with a reference to the location of the long description in the short description"
+                            "title": "短い説明の中で長い説明のある場所を示して、非テキストコンテンツの近くにあるテキストで長い説明を提供する"
                           },
                           {
                             "id": "TECH:G92",
-                            "title": "Providing long description for non-text content that serves the same purpose and presents the same information"
+                            "title": "非テキストコンテンツに対して、それと同じ目的を果たし、同じ情報を提供する長い説明を提供する"
                           },
                           {
                             "id": "TECH:FLASH2",
-                            "title": "Setting the description property for a non-text object in Flash"
+                            "title": "Flash 内の非テキストオブジェクトに説明プロパティを設定する"
                           },
                           {
                             "id": "TECH:FLASH11",
-                            "title": "Providing a longer text description of an object"
+                            "title": "オブジェクトについて長いテキストの説明を提供する"
                           },
                           {
                             "id": "TECH:H45",
-                            "title": "Using longdesc"
+                            "title": "longdesc 属性を用いる"
                           },
                           {
                             "id": "TECH:H53",
-                            "title": "Using the body of the object element"
+                            "title": "object 要素のボディを使用する"
                           },
                           {
                             "id": "TECH:SL8",
@@ -231,61 +231,61 @@
                 "techniques": [
                   {
                     "id": "TECH:G82",
-                    "title": "Providing a text alternative that identifies the purpose of the non-text content",
+                    "title": "非テキストコンテンツの目的を特定する代替テキストを提供する",
                     "using": [{"group": {
                       "title": "Text alternative techniques for controls and input for Situation C:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
-                          "title": "Using aria-label to provide labels for objects"
+                          "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                         },
                         {
                           "id": "TECH:ARIA9",
-                          "title": "Using aria-labelledby to concatenate a label from several text nodes"
+                          "title": "複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する"
                         },
                         {
                           "id": "TECH:FLASH6",
-                          "title": "Creating accessible hotspots using invisible buttons"
+                          "title": "非表示のボタンを使用してアクセシブルなホットスポットを作成する"
                         },
                         {
                           "id": "TECH:FLASH25",
-                          "title": "Labeling a form control by setting its accessible name"
+                          "title": "アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける"
                         },
                         {
                           "id": "TECH:FLASH27",
-                          "title": "Providing button labels that describe the purpose of a button"
+                          "title": "ボタンの目的を説明するラベルを提供する"
                         },
                         {
                           "id": "TECH:FLASH29",
-                          "title": "Setting the label property for form components"
+                          "title": "フォーム・コンポーネントに label プロパティを設定す"
                         },
                         {
                           "id": "TECH:FLASH30",
-                          "title": "Specifying accessible names for image buttons"
+                          "title": "画像ボタンにアクセシブルな名前を指定する"
                         },
                         {
                           "id": "TECH:FLASH32",
-                          "title": "Using auto labeling to associate text labels with form controls"
+                          "title": "フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する"
                         },
                         {
                           "id": "TECH:H24",
-                          "title": "Providing text alternatives for the area elements of image maps"
+                          "title": "イメージマップの area 要素に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H30",
-                          "title": "Providing link text that describes the purpose of a link for anchor elements"
+                          "title": "a 要素のリンクの目的を説明するリンクテキストを提供する"
                         },
                         {
                           "id": "TECH:H36",
-                          "title": "Using alt attributes on images used as submit buttons"
+                          "title": "送信 \/ 実行ボタンとして用いる画像の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H44",
-                          "title": "Using label elements to associate text labels with form controls"
+                          "title": "テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する"
                         },
                         {
                           "id": "TECH:H65",
-                          "title": "Using the title attribute to identify form controls when the label element cannot be used"
+                          "title": "label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する"
                         },
                         {
                           "id": "TECH:SL18",
@@ -309,57 +309,57 @@
                 "techniques": [
                   {
                     "id": "TECH:future1",
-                    "title": "Providing a descriptive label",
+                    "title": "目的や内容が分かるラベルを提供する",
                     "using": [{"group": {
                       "title": "Short text alternative techniques for Situation D:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
-                          "title": "Using aria-label to provide labels for objects"
+                          "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                         },
                         {
                           "id": "TECH:ARIA10",
-                          "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                          "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                         },
                         {
                           "id": "TECH:G196",
-                          "title": "Using a text alternative on one item within a group of images that describes all items in the group"
+                          "title": "画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する"
                         },
                         {
                           "id": "TECH:FLASH1",
-                          "title": "Setting the name property for a non-text object"
+                          "title": "非テキストオブジェクトに名前プロパティを設定する"
                         },
                         {
                           "id": "TECH:FLASH5",
-                          "title": "Combining adjacent image and text buttons for the same resource"
+                          "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                         },
                         {
                           "id": "TECH:FLASH28",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash"
+                          "title": "Flash で ASCII アート、顔文字、リート語の代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H2",
-                          "title": "Combining adjacent image and text links for the same resource"
+                          "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                         },
                         {
                           "id": "TECH:H35",
-                          "title": "Providing text alternatives on applet elements"
+                          "title": "applet 要素に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H37",
-                          "title": "Using alt attributes on img elements"
+                          "title": "img 要素の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H53",
-                          "title": "Using the body of the object element"
+                          "title": "object 要素のボディを使用する"
                         },
                         {
                           "id": "TECH:H86",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak"
+                          "title": "ASCII アート、顔文字、及びリート語に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:PDF1",
-                          "title": "Applying text alternatives to images with the Alt entry in PDF documents"
+                          "title": "PDF 文書の Alt エントリによって画像に代替テキストを適用する"
                         },
                         {
                           "id": "TECH:SL5",
@@ -370,65 +370,65 @@
                   },
                   {
                     "id": "TECH:ARIA6",
-                    "title": "Using aria-label to provide labels for objects"
+                    "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                   },
                   {
                     "id": "TECH:ARIA10",
-                    "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                    "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                   },
                   {
                     "id": "TECH:G68",
-                    "title": "Providing a short text alternative that describes the purpose of live audio-only and live video-only content",
+                    "title": "ライブの音声しか含まないコンテンツ及びライブの映像しか含まないコンテンツの目的を説明するために、簡潔な代替テキストを提供する",
                     "using": [{"group": {
                       "title": "Short text alternative techniques for Situation D:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
-                          "title": "Using aria-label to provide labels for objects"
+                          "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                         },
                         {
                           "id": "TECH:ARIA10",
-                          "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                          "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                         },
                         {
                           "id": "TECH:G196",
-                          "title": "Using a text alternative on one item within a group of images that describes all items in the group"
+                          "title": "画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する"
                         },
                         {
                           "id": "TECH:FLASH1",
-                          "title": "Setting the name property for a non-text object"
+                          "title": "非テキストオブジェクトに名前プロパティを設定する"
                         },
                         {
                           "id": "TECH:FLASH5",
-                          "title": "Combining adjacent image and text buttons for the same resource"
+                          "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                         },
                         {
                           "id": "TECH:FLASH28",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash"
+                          "title": "Flash で ASCII アート、顔文字、リート語の代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H2",
-                          "title": "Combining adjacent image and text links for the same resource"
+                          "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                         },
                         {
                           "id": "TECH:H35",
-                          "title": "Providing text alternatives on applet elements"
+                          "title": "applet 要素に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H37",
-                          "title": "Using alt attributes on img elements"
+                          "title": "img 要素の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H53",
-                          "title": "Using the body of the object element"
+                          "title": "object 要素のボディを使用する"
                         },
                         {
                           "id": "TECH:H86",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak"
+                          "title": "ASCII アート、顔文字、及びリート語に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:PDF1",
-                          "title": "Applying text alternatives to images with the Alt entry in PDF documents"
+                          "title": "PDF 文書の Alt エントリによって画像に代替テキストを適用する"
                         },
                         {
                           "id": "TECH:SL5",
@@ -439,57 +439,57 @@
                   },
                   {
                     "id": "TECH:G100",
-                    "title": "Providing a short text alternative which is the accepted name or a descriptive name of the non-text content",
+                    "title": "非テキストコンテンツの一般に認められた名前又は内容が分かる名前となる簡潔な代替テキストを提供する",
                     "using": [{"group": {
                       "title": "Short text alternative techniques for Situation D:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
-                          "title": "Using aria-label to provide labels for objects"
+                          "title": "オブジェクトのラベルを提供するために aria-label を使用する"
                         },
                         {
                           "id": "TECH:ARIA10",
-                          "title": "Using aria-labelledby to provide a text alternative for non-text content"
+                          "title": "非テキストコンテンツに対して代替テキストを提供するために、aria-labelledby を使用する"
                         },
                         {
                           "id": "TECH:G196",
-                          "title": "Using a text alternative on one item within a group of images that describes all items in the group"
+                          "title": "画像のグループにある一つの画像に、そのグループのすべての画像を説明する代替テキストを提供する"
                         },
                         {
                           "id": "TECH:FLASH1",
-                          "title": "Setting the name property for a non-text object"
+                          "title": "非テキストオブジェクトに名前プロパティを設定する"
                         },
                         {
                           "id": "TECH:FLASH5",
-                          "title": "Combining adjacent image and text buttons for the same resource"
+                          "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                         },
                         {
                           "id": "TECH:FLASH28",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak in Flash"
+                          "title": "Flash で ASCII アート、顔文字、リート語の代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H2",
-                          "title": "Combining adjacent image and text links for the same resource"
+                          "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                         },
                         {
                           "id": "TECH:H35",
-                          "title": "Providing text alternatives on applet elements"
+                          "title": "applet 要素に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:H37",
-                          "title": "Using alt attributes on img elements"
+                          "title": "img 要素の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H53",
-                          "title": "Using the body of the object element"
+                          "title": "object 要素のボディを使用する"
                         },
                         {
                           "id": "TECH:H86",
-                          "title": "Providing text alternatives for ASCII art, emoticons, and leetspeak"
+                          "title": "ASCII アート、顔文字、及びリート語に代替テキストを提供する"
                         },
                         {
                           "id": "TECH:PDF1",
-                          "title": "Applying text alternatives to images with the Alt entry in PDF documents"
+                          "title": "PDF 文書の Alt エントリによって画像に代替テキストを適用する"
                         },
                         {
                           "id": "TECH:SL5",
@@ -505,11 +505,11 @@
                 "techniques": [{"and": [
                   {
                     "id": "TECH:G143",
-                    "title": "Providing a text alternative that describes the purpose of the CAPTCHA"
+                    "title": "代替テキストを提供して、CAPTCHA の目的を説明する"
                   },
                   {
                     "id": "TECH:G144",
-                    "title": "Ensuring that the Web Page contains another CAPTCHA serving the same purpose using a different modality"
+                    "title": "同じ目的を果たす、異なる感覚モダリティを用いたもう一つの CAPTCHA がウェブページにあることを確認する"
                   }
                 ]}]
               },
@@ -524,19 +524,19 @@
                       "techniques": [
                         {
                           "id": "TECH:C9",
-                          "title": "Using CSS to include decorative images"
+                          "title": "装飾目的の画像を付加するために、CSS を使用する"
                         },
                         {
                           "id": "TECH:FLASH3",
-                          "title": "Marking objects in Flash so that they can be ignored by AT"
+                          "title": "支援技術が無視できるように Flash のオブジェクトにマークを付ける"
                         },
                         {
                           "id": "TECH:H67",
-                          "title": "Using null alt text and no title attribute on img elements for images that AT should ignore"
+                          "title": "支援技術が無視すべき画像の img 要素で、alt 属性値を空にして、title 属性を付与しない"
                         },
                         {
                           "id": "TECH:PDF4",
-                          "title": "Hiding decorative images with the Artifact tag in PDF documents"
+                          "title": "PDF 文書の Artifact タグによって装飾的な画像をタグ構造から削除する"
                         }
                       ]
                     }}]
@@ -603,7 +603,7 @@
                 "techniques": [
                   {
                     "id": "TECH:H46",
-                    "title": "Using noembed with embed"
+                    "title": "embed 要素と一緒に noembed 要素を用いる"
                   },
                   {
                     "id": "TECH:future2",
@@ -628,7 +628,7 @@
                 "techniques": [
                   {
                     "id": "TECH:C18",
-                    "title": "Using CSS margin and padding rules instead of spacer images for layout design"
+                    "title": "レイアウトデザインのためのスペーサー画像ではなく、CSS のマージンとパディング規則を使用する"
                   },
                   {
                     "id": "TECH:future2",
@@ -681,43 +681,43 @@
             {"failure": [
               {
                 "id": "TECH:F3",
-                "title": "Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information"
+                "title": "達成基準 1.1.1 の失敗例 － 重要な情報を伝える画像を表示させるために、CSS を使用している"
               },
               {
                 "id": "TECH:F13",
-                "title": "Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that does not include information that is conveyed by color differences in the image"
+                "title": "達成基準 1.4.1 の失敗例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない"
               },
               {
                 "id": "TECH:F20",
-                "title": "Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives when changes to non-text content occur"
+                "title": "達成基準 1.1.1 及び 達成基準 4.1.2 の失敗例 － 非テキストコンテンツの変更時に代替テキストを更新していない"
               },
               {
                 "id": "TECH:F30",
-                "title": "Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
+                "title": "達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 代替ではない代替テキストを使用している（例：ファイル名、プレースホルダー・テキストなど）"
               },
               {
                 "id": "TECH:F38",
-                "title": "Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them"
+                "title": "達成基準 1.1.1 の失敗例 － HTML で装飾を目的にして用いられている非テキストコンテンツの alt 属性を省略している"
               },
               {
                 "id": "TECH:F39",
-                "title": "Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null (e.g., alt=\"spacer\" or alt=\"image\") for images that should be ignored by assistive technology"
+                "title": "達成基準 1.1.1 の失敗例 － 支援技術が無視すべき画像に対して、空ではない代替テキストを提供している（例： alt=\"spacer\" 又は alt=\"image\"）"
               },
               {
                 "id": "TECH:F65",
-                "title": "Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type \"image\""
+                "title": "達成基準 1.1.1 の失敗例 － img 要素、area 要素、及び type \"image\" の input 要素のalt属性を省略している"
               },
               {
                 "id": "TECH:F67",
-                "title": "Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information"
+                "title": "達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している"
               },
               {
                 "id": "TECH:F71",
-                "title": "Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative"
+                "title": "達成基準 1.1.1 の失敗例 － テキストを表すのに、代替テキストを提供せずに、テキストのようなものを使用している"
               },
               {
                 "id": "TECH:F72",
-                "title": "Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text alternative"
+                "title": "達成基準 1.1.1 の失敗例 － 代替テキストを提供せずに、ASCII アートを用いている"
               }
             ]}
           ]
@@ -726,8 +726,8 @@
       {
         "id": "WCAG2:media-equiv",
         "num": "1.2",
-        "handle": "Time-based Media",
-        "title": "Provide alternatives for time-based media.",
+        "handle": "時間依存メディア",
+        "title": "時間依存メディアには代替コンテンツを提供すること。",
         "techniques": [{"advisory": []}],
         "successcriteria": [
           {
@@ -735,17 +735,17 @@
             "num": "1.2.1",
             "level": "A",
             "handle": "Audio-only and Video-only (Prerecorded)",
-            "title": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
+            "title": "音声のみ及び映像のみ (収録済) : 収録済の音声しか含まないメディア及び収録済の映像しか含まないメディアは、次の事項を満たしている。ただし、その音声又は映像がメディアによるテキストの代替であって、メディアによる代替であることが明確にラベル付けされている場合は除く:",
             "details": [{
               "type": "ulist",
               "items": [
                 {
-                  "handle": "Prerecorded Audio-only",
-                  "text": "An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content."
+                  "handle": "収録済の音声しか含まない",
+                  "text": "時間依存メディアに対する代替コンテンツによって、収録済の音声しか含まないコンテンツと同等の情報を提供している。"
                 },
                 {
-                  "handle": "Prerecorded Video-only",
-                  "text": "Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content."
+                  "handle": "収録済の映像しか含まない",
+                  "text": "時間依存メディアに対する代替コンテンツ又は音声トラックによって、収録済の映像しか含まないコンテンツと同等の情報を提供している。"
                 }
               ]
             }],
@@ -756,7 +756,7 @@
                   "techniques": [
                     {
                       "id": "TECH:G158",
-                      "title": "Providing an alternative for time-based media for audio-only content"
+                      "title": "時間の経過に伴って変化するメディアの音声しか含まないコンテンツに対して代替コンテンツを提供する"
                     },
                     {
                       "id": "TECH:SL17",
@@ -769,11 +769,11 @@
                   "techniques": [
                     {
                       "id": "TECH:G159",
-                      "title": "Providing an alternative for time-based media for video-only content"
+                      "title": "時間の経過に伴って変化するメディアの映像しか含まないコンテンツに対して代替コンテンツを提供する"
                     },
                     {
                       "id": "TECH:G166",
-                      "title": "Providing audio that describes the important video content and describing it as such"
+                      "title": "重要な映像コンテンツを説明する音声を提供する"
                     },
                     {
                       "id": "TECH:SL17",
@@ -785,7 +785,7 @@
               {"advisory": [
                 {
                   "id": "TECH:H96",
-                  "title": "Using the track element to provide audio descriptions"
+                  "title": "音声解説を提供するために、track 要素を使用する"
                 },
                 {
                   "id": "TECH:future2",
@@ -799,11 +799,11 @@
               {"failure": [
                 {
                   "id": "TECH:F30",
-                  "title": "Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g., filenames or placeholder text)"
+                  "title": "達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 代替ではない代替テキストを使用している（例：ファイル名、プレースホルダー・テキストなど）"
                 },
                 {
                   "id": "TECH:F67",
-                  "title": "Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information"
+                  "title": "達成基準 1.1.1 及び 達成基準 1.2.1 の失敗例 － 非テキストコンテンツに対して、それと同じ目的を果たしていない、又は同じ情報を提示していない長い説明を提供している"
                 }
               ]}
             ]
@@ -812,37 +812,37 @@
             "id": "WCAG2:media-equiv-captions",
             "num": "1.2.2",
             "level": "A",
-            "handle": "Captions (Prerecorded)",
-            "title": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+            "handle": "キャプション (収録済)",
+            "title": "同期したメディアに含まれているすべての収録済の音声コンテンツに対して、キャプションが提供されている。ただし、その同期したメディアがメディアによるテキストの代替であって、メディアによる代替であることが明確にラベル付けされている場合は除く。",
             "techniques": [
               {"sufficient": [
                 {
                   "id": "TECH:G93",
-                  "title": "Providing open (always visible) captions"
+                  "title": "オープン・キャプション（常に表示）を提供する"
                 },
                 {
                   "id": "TECH:G87",
-                  "title": "Providing closed captions"
+                  "title": "クローズド・キャプションを提供する"
                 },
                 {
                   "id": "TECH:G87",
-                  "title": "Providing closed captions",
+                  "title": "クローズド・キャプションを提供する",
                   "using": [
                     {
                       "id": "TECH:SM11",
-                      "title": "Providing captions through synchronized text streams in SMIL 1.0"
+                      "title": "SMIL 1.0 で同期したテキストストリームによるキャプションを提供する"
                     },
                     {
                       "id": "TECH:SM12",
-                      "title": "Providing captions through synchronized text streams in SMIL 2.0"
+                      "title": "SMIL 1.0 で同期したテキストストリームによるキャプションを提供する"
                     },
                     {
                       "id": "TECH:H95",
-                      "title": "Using the track element to provide captions"
+                      "title": "キャプションを提供するために、track要素を使用する"
                     },
                     {
                       "id": "TECH:FLASH9",
-                      "title": "Applying captions to prerecorded synchronized media"
+                      "title": "収録済みの同期したメディアにキャプションを提供する"
                     },
                     {
                       "id": "TECH:SL16",
@@ -872,15 +872,15 @@
               {"failure": [
                 {
                   "id": "TECH:F8",
-                  "title": "Failure of Success Criterion 1.2.2 due to captions omitting some dialogue or important sound effects"
+                  "title": "達成基準 1.2.2 の失敗例 － キャプションがいくつかの発話内容又は重要な効果音を省略している"
                 },
                 {
                   "id": "TECH:F75",
-                  "title": "Failure of Success Criterion 1.2.2 by providing synchronized media without captions when the synchronized media presents more information than is presented on the page"
+                  "title": "達成基準 1.2.2 の失敗例 － 同期したメディアがページ上にある情報よりも多くの情報を提示している際、キャプションなしで同期したメディアを提供している"
                 },
                 {
                   "id": "TECH:F74",
-                  "title": "Failure of Success Criterion 1.2.2 and 1.2.8 due to not labeling a synchronized media alternative to text as an alternative"
+                  "title": "達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する代替である同期したメディアを代替コンテンツとしてラベル付けしていない"
                 }
               ]}
             ]
@@ -889,17 +889,17 @@
             "id": "WCAG2:media-equiv-audio-desc",
             "num": "1.2.3",
             "level": "A",
-            "handle": "Audio Description or Media Alternative (Prerecorded)",
-            "title": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+            "handle": "音声解説、又はメディアに対する代替 (収録済)",
+            "title": "同期したメディアに含まれている収録済の映像コンテンツに対して、時間依存メディアに対する代替コンテンツ又は音声解説が提供されている。ただし、その同期したメディアがメディアによるテキストの代替であって、メディアによる代替であることが明確にラベル付けされている場合は除く。",
             "techniques": [
               {"sufficient": [
                 {
                   "id": "TECH:G69",
-                  "title": "Providing an alternative for time based media",
+                  "title": "時間の経過の伴い変化するメディアに対して代替コンテンツを提供する",
                   "using": [
                     {
                       "id": "TECH:G58",
-                      "title": "Placing a link to the alternative for time-based media immediately next to the non-text content"
+                      "title": "非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く"
                     },
                     {
                       "id": "TECH:SL17",
@@ -912,17 +912,17 @@
                   "title": "Linking to the alternative for time-based media",
                   "using": [{
                     "id": "TECH:H53",
-                    "title": "Using the body of the object element"
+                    "title": "object 要素のボディを使用する"
                   }]
                 },
                 {
                   "id": "TECH:G78",
-                  "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
+                  "title": "音声解説を含んだ、利用者が選択可能な副音声トラックを提供する"
                 },
                 {"and": [
                   {
                     "id": "TECH:G78",
-                    "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
+                    "title": "音声解説を含んだ、利用者が選択可能な副音声トラックを提供する"
                   },
                   {
                     "id": "TECH:SL1",
@@ -931,19 +931,19 @@
                 ]},
                 {
                   "id": "TECH:G173",
-                  "title": "Providing a version of a movie with audio descriptions",
+                  "title": "映像の音声解説付きバージョンを提供する",
                   "using": [
                     {
                       "id": "TECH:SM6",
-                      "title": "Providing audio description in SMIL 1.0"
+                      "title": "SMIL 1.0 で音声解説を提供する"
                     },
                     {
                       "id": "TECH:SM7",
-                      "title": "Providing audio description in SMIL 2.0"
+                      "title": "SMIL 2.0 で音声解説を提供する"
                     },
                     {
                       "id": "TECH:FLASH26",
-                      "title": "Applying audio descriptions to Flash video"
+                      "title": "Flash ビデオに音声解説を提供する"
                     },
                     {
                       "id": "TECH:SL1",
@@ -957,19 +957,19 @@
                 },
                 {
                   "id": "TECH:G8",
-                  "title": "Providing a movie with extended audio descriptions",
+                  "title": "拡張音声解説が付いたムービーを提供する",
                   "using": [
                     {
                       "id": "TECH:SM1",
-                      "title": "Adding extended audio description in SMIL 1.0"
+                      "title": "SMIL 1.0 で拡張音声解説を追加する"
                     },
                     {
                       "id": "TECH:SM2",
-                      "title": "Adding extended audio description in SMIL 2.0"
+                      "title": "SMIL 2.0 で拡張音声解説を追加する"
                     },
                     {
                       "id": "TECH:FLASH26",
-                      "title": "Applying audio descriptions to Flash video"
+                      "title": "Flash ビデオに音声解説を提供する"
                     },
                     {
                       "id": "TECH:SL1",
@@ -983,13 +983,13 @@
                 },
                 {
                   "id": "TECH:G203",
-                  "title": "Using a static text alternative to describe a talking head video"
+                  "title": "話者が話すのみの映像を説明するために、静的な代替テキストを使用する"
                 }
               ]},
               {"advisory": [
                 {
                   "id": "TECH:H96",
-                  "title": "Using the track element to provide audio descriptions"
+                  "title": "音声解説を提供するために、track 要素を使用する"
                 },
                 {
                   "id": "TECH:future2",
@@ -1006,48 +1006,48 @@
             "id": "WCAG2:media-equiv-real-time-captions",
             "num": "1.2.4",
             "level": "AA",
-            "handle": "Captions (Live)",
-            "title": "Captions are provided for all live audio content in synchronized media.",
+            "handle": "キャプション (ライブ)",
+            "title": "同期したメディアに含まれているすべてのライブの音声コンテンツに対してキャプションが提供されている。",
             "techniques": [{"sufficient": [
               {"and": [
                 {
                   "id": "TECH:G9",
-                  "title": "Creating captions for live synchronized media"
+                  "title": "ライブの同期したメディアに対してキャプションを作成する"
                 },
                 {
                   "id": "TECH:G93",
-                  "title": "Providing open (always visible) captions"
+                  "title": "オープン・キャプション（常に表示）を提供する"
                 }
               ]},
               {"and": [
                 {
                   "id": "TECH:G9",
-                  "title": "Creating captions for live synchronized media"
+                  "title": "ライブの同期したメディアに対してキャプションを作成する"
                 },
                 {
                   "id": "TECH:G87",
-                  "title": "Providing closed captions"
+                  "title": "クローズド・キャプションを提供する"
                 }
               ]},
               {
                 "and": [
                   {
                     "id": "TECH:G9",
-                    "title": "Creating captions for live synchronized media"
+                    "title": "ライブの同期したメディアに対してキャプションを作成する"
                   },
                   {
                     "id": "TECH:G87",
-                    "title": "Providing closed captions"
+                    "title": "クローズド・キャプションを提供する"
                   }
                 ],
                 "using": [
                   {
                     "id": "TECH:SM11",
-                    "title": "Providing captions through synchronized text streams in SMIL 1.0"
+                    "title": "SMIL 1.0 で同期したテキストストリームによるキャプションを提供する"
                   },
                   {
                     "id": "TECH:SM12",
-                    "title": "Providing captions through synchronized text streams in SMIL 2.0"
+                    "title": "SMIL 1.0 で同期したテキストストリームによるキャプションを提供する"
                   }
                 ]
               }
@@ -1060,18 +1060,18 @@
             "id": "WCAG2:media-equiv-audio-desc-only",
             "num": "1.2.5",
             "level": "AA",
-            "handle": "Audio Description (Prerecorded)",
-            "title": "Audio description is provided for all prerecorded video content in synchronized media.",
+            "handle": "音声解説 (収録済)",
+            "title": "同期したメディアに含まれているすべての収録済の映像コンテンツに対して、音声解説が提供されている。",
             "techniques": [
               {"sufficient": [
                 {
                   "id": "TECH:G78",
-                  "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
+                  "title": "音声解説を含んだ、利用者が選択可能な副音声トラックを提供する"
                 },
                 {"and": [
                   {
                     "id": "TECH:G78",
-                    "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
+                    "title": "音声解説を含んだ、利用者が選択可能な副音声トラックを提供する"
                   },
                   {
                     "id": "TECH:SL1",
@@ -1080,19 +1080,19 @@
                 ]},
                 {
                   "id": "TECH:G173",
-                  "title": "Providing a version of a movie with audio descriptions",
+                  "title": "映像の音声解説付きバージョンを提供する",
                   "using": [
                     {
                       "id": "TECH:SM6",
-                      "title": "Providing audio description in SMIL 1.0"
+                      "title": "SMIL 1.0 で音声解説を提供する"
                     },
                     {
                       "id": "TECH:SM7",
-                      "title": "Providing audio description in SMIL 2.0"
+                      "title": "SMIL 2.0 で音声解説を提供する"
                     },
                     {
                       "id": "TECH:FLASH26",
-                      "title": "Applying audio descriptions to Flash video"
+                      "title": "Flash ビデオに音声解説を提供する"
                     },
                     {
                       "id": "TECH:future4",
@@ -1102,19 +1102,19 @@
                 },
                 {
                   "id": "TECH:G8",
-                  "title": "Providing a movie with extended audio descriptions",
+                  "title": "拡張音声解説が付いたムービーを提供する",
                   "using": [
                     {
                       "id": "TECH:SM1",
-                      "title": "Adding extended audio description in SMIL 1.0"
+                      "title": "SMIL 1.0 で拡張音声解説を追加する"
                     },
                     {
                       "id": "TECH:SM2",
-                      "title": "Adding extended audio description in SMIL 2.0"
+                      "title": "SMIL 2.0 で拡張音声解説を追加する"
                     },
                     {
                       "id": "TECH:FLASH26",
-                      "title": "Applying audio descriptions to Flash video"
+                      "title": "Flash ビデオに音声解説を提供する"
                     },
                     {
                       "id": "TECH:future4",
@@ -1124,13 +1124,13 @@
                 },
                 {
                   "id": "TECH:G203",
-                  "title": "Using a static text alternative to describe a talking head video"
+                  "title": "話者が話すのみの映像を説明するために、静的な代替テキストを使用する"
                 }
               ]},
               {"advisory": [
                 {
                   "id": "TECH:H96",
-                  "title": "Using the track element to provide audio descriptions"
+                  "title": "音声解説を提供するために、track 要素を使用する"
                 },
                 {
                   "id": "TECH:future2",
@@ -1151,25 +1151,25 @@
             "id": "WCAG2:media-equiv-sign",
             "num": "1.2.6",
             "level": "AAA",
-            "handle": "Sign Language (Prerecorded)",
-            "title": "Sign language interpretation is provided for all prerecorded audio content in synchronized media.",
+            "handle": "手話 (収録済)",
+            "title": "同期したメディアに含まれているすべての収録済の音声コンテンツに対して、手話通訳が提供されている。",
             "techniques": [
               {"sufficient": [
                 {
                   "id": "TECH:G54",
-                  "title": "Including a sign language interpreter in the video stream"
+                  "title": "映像ストリームに手話通訳を含める"
                 },
                 {
                   "id": "TECH:G81",
-                  "title": "Providing a synchronized video of the sign language interpreter that can be displayed in a different viewport or overlaid on the image by the player",
+                  "title": "プレーヤーによって別のビューポートに表示する、又は画像上に重ねることのできる、手話通訳の同期した映像を提供する",
                   "using": [
                     {
                       "id": "TECH:SM13",
-                      "title": "Providing sign language interpretation through synchronized video streams in SMIL 1.0"
+                      "title": "SMIL 1.0 で、同期した映像ストリームを通じて手話通訳を提供する"
                     },
                     {
                       "id": "TECH:SM14",
-                      "title": "Providing sign language interpretation through synchronized video streams in SMIL 2.0"
+                      "title": "SMIL 2.0 で、同期した映像ストリームを通じて手話通訳を提供する"
                     }
                   ]
                 }
@@ -1191,20 +1191,20 @@
             "id": "WCAG2:media-equiv-extended-ad",
             "num": "1.2.7",
             "level": "AAA",
-            "handle": "Extended Audio Description (Prerecorded)",
-            "title": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.",
+            "handle": "拡張音声解説 (収録済)",
+            "title": "前景音の合間が、音声解説で映像の意味を伝達するのに不十分な場合、同期したメディアに含まれているすべての収録済の映像コンテンツに対して、拡張音声解説が提供されている。",
             "techniques": [
               {"sufficient": [{
                 "id": "TECH:G8",
-                "title": "Providing a movie with extended audio descriptions",
+                "title": "拡張音声解説が付いたムービーを提供する",
                 "using": [
                   {
                     "id": "TECH:SM1",
-                    "title": "Adding extended audio description in SMIL 1.0"
+                    "title": "SMIL 1.0 で拡張音声解説を追加する"
                   },
                   {
                     "id": "TECH:SM2",
-                    "title": "Adding extended audio description in SMIL 2.0"
+                    "title": "SMIL 2.0 で拡張音声解説を追加する"
                   },
                   {
                     "id": "TECH:future3",
@@ -1215,7 +1215,7 @@
               {"advisory": [
                 {
                   "id": "TECH:H96",
-                  "title": "Using the track element to provide audio descriptions"
+                  "title": "音声解説を提供するために、track 要素を使用する"
                 },
                 {
                   "id": "TECH:future2",
@@ -1232,8 +1232,8 @@
             "id": "WCAG2:media-equiv-text-doc",
             "num": "1.2.8",
             "level": "AAA",
-            "handle": "Media Alternative (Prerecorded)",
-            "title": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.",
+            "handle": "メディアに対する代替 (収録済)",
+            "title": "すべての収録済の同期したメディア及びすべての収録済の映像しか含まないメディアに対して、時間依存メディアに対する代替コンテンツが提供されている。",
             "techniques": [
               {"sufficient": [{"situations": [
                 {
@@ -1241,11 +1241,11 @@
                   "techniques": [
                     {
                       "id": "TECH:G69",
-                      "title": "Providing an alternative for time based media",
+                      "title": "時間の経過の伴い変化するメディアに対して代替コンテンツを提供する",
                       "using": [
                         {
                           "id": "TECH:G58",
-                          "title": "Placing a link to the alternative for time-based media immediately next to the non-text content"
+                          "title": "非テキストコンテンツのすぐ隣に、時間の経過に伴って変化するメディアの代替へのリンクを置く"
                         },
                         {
                           "id": "TECH:SL17",
@@ -1258,7 +1258,7 @@
                       "title": "Linking to the alternative for time-based media",
                       "using": [{
                         "id": "TECH:H53",
-                        "title": "Using the body of the object element"
+                        "title": "object 要素のボディを使用する"
                       }]
                     }
                   ]
@@ -1267,14 +1267,14 @@
                   "title": "Situation B: If the content is prerecorded video-only:",
                   "techniques": [{
                     "id": "TECH:G159",
-                    "title": "Providing an alternative for time-based media for video-only content"
+                    "title": "時間の経過に伴って変化するメディアの映像しか含まないコンテンツに対して代替コンテンツを提供する"
                   }]
                 }
               ]}]},
               {"advisory": [
                 {
                   "id": "TECH:H46",
-                  "title": "Using noembed with embed"
+                  "title": "embed 要素と一緒に noembed 要素を用いる"
                 },
                 {
                   "id": "TECH:future2",
@@ -1287,7 +1287,7 @@
               ]},
               {"failure": [{
                 "id": "TECH:F74",
-                "title": "Failure of Success Criterion 1.2.2 and 1.2.8 due to not labeling a synchronized media alternative to text as an alternative"
+                "title": "達成基準 1.2.2 及び 達成基準 1.2.8 の失敗例 － テキストに対する代替である同期したメディアを代替コンテンツとしてラベル付けしていない"
               }]}
             ]
           },
@@ -1295,21 +1295,21 @@
             "id": "WCAG2:media-equiv-live-audio-only",
             "num": "1.2.9",
             "level": "AAA",
-            "handle": "Audio-only (Live)",
-            "title": "An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
+            "handle": "音声のみ (ライブ)",
+            "title": "音声のみ (ライブ) : ライブの音声しか含まないコンテンツに対して、それと同等の情報を提示する、時間依存メディアの代替コンテンツが提供されている。",
             "techniques": [
               {"sufficient": [
                 {
                   "id": "TECH:G151",
-                  "title": "Providing a link to a text transcript of a prepared statement or script if the script is followed"
+                  "title": "予め用意されたスピーチ原稿のトランスクリプト、又は台本通りのコンテンツの場合には台本へのリンクを提供する"
                 },
                 {
                   "id": "TECH:G150",
-                  "title": "Providing text based alternatives for live audio-only content"
+                  "title": "ライブの音声しか含まないコンテンツに対して、テキストベースの代替コンテンツを提供する"
                 },
                 {
                   "id": "TECH:G157",
-                  "title": "Incorporating a live audio captioning service into a Web page"
+                  "title": "ライブの音声キャプションサービスをウェブページに組み込む"
                 }
               ]},
               {"advisory": [{
@@ -1318,7 +1318,7 @@
                 "using": [
                   {
                     "id": "TECH:text1",
-                    "title": "<em>Example:</em> Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
+                    "title": "<em>Example:<\/em> Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
                   }
                 ]
               }]}
@@ -1436,11 +1436,11 @@
                         },
                         {
                           "id": "TECH:H44",
-                          "title": "Using label elements to associate text labels with form controls"
+                          "title": "テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する"
                         },
                         {
                           "id": "TECH:H65",
-                          "title": "Using the title attribute to identify form controls when the label element cannot be used"
+                          "title": "label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する"
                         },
                         {
                           "id": "TECH:PDF10",
@@ -1452,15 +1452,15 @@
                         },
                         {
                           "id": "TECH:FLASH32",
-                          "title": "Using auto labeling to associate text labels with form controls"
+                          "title": "フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する"
                         },
                         {
                           "id": "TECH:FLASH29",
-                          "title": "Setting the label property for form components"
+                          "title": "フォーム・コンポーネントに label プロパティを設定す"
                         },
                         {
                           "id": "TECH:FLASH25",
-                          "title": "Labeling a form control by setting its accessible name"
+                          "title": "アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける"
                         },
                         {
                           "id": "TECH:H71",
@@ -1496,7 +1496,7 @@
                         },
                         {
                           "id": "TECH:PDF11",
-                          "title": "Providing links and link text using the Link annotation and the /Link structure element in PDF documents"
+                          "title": "Providing links and link text using the Link annotation and the \/Link structure element in PDF documents"
                         },
                         {
                           "id": "TECH:PDF17",
@@ -1838,7 +1838,7 @@
               {"failure": [
                 {
                   "id": "TECH:F13",
-                  "title": "Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that does not include information that is conveyed by color differences in the image"
+                  "title": "達成基準 1.4.1 の失敗例 － 画像上の色の違いで伝えている情報が、代替テキストに含まれていない"
                 },
                 {
                   "id": "TECH:F73",
@@ -1996,7 +1996,7 @@
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text/background combinations"
+                  "title": "Using greater contrast level for red-black text\/background combinations"
                 },
                 {
                   "id": "TECH:future6",
@@ -2353,7 +2353,7 @@
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text/background combinations"
+                  "title": "Using greater contrast level for red-black text\/background combinations"
                 },
                 {
                   "id": "TECH:future6",
@@ -2648,7 +2648,7 @@
                 },
                 {
                   "id": "TECH:future14",
-                  "title": "Show/hide bullet points"
+                  "title": "Show\/hide bullet points"
                 },
                 {
                   "id": "TECH:future15",
@@ -2796,7 +2796,7 @@
                     },
                     {
                       "id": "TECH:PDF11",
-                      "title": "Providing links and link text using the Link annotation and the /Link structure element in PDF documents"
+                      "title": "Providing links and link text using the Link annotation and the \/Link structure element in PDF documents"
                     },
                     {
                       "id": "TECH:PDF23",
@@ -2938,7 +2938,7 @@
             "techniques": [{"sufficient":[
               {
                 "id": "TECH:text1",
-                "title": "No additional techniques exist for this Success Criterion. Follow techniques for <a href='#keyboard-operation-keyboard-operable'>Success Criterion 2.1.1</a>. If that is not possible because there is a requirement for path-dependent input, then it is not possible to meet this Level AAA Success Criterion."
+                "title": "No additional techniques exist for this Success Criterion. Follow techniques for <a href='#keyboard-operation-keyboard-operable'>Success Criterion 2.1.1<\/a>. If that is not possible because there is a requirement for path-dependent input, then it is not possible to meet this Level AAA Success Criterion."
               }
             ]}]
           }
@@ -3664,15 +3664,15 @@
                 },
                 {
                   "id": "TECH:H30",
-                  "title": "Providing link text that describes the purpose of a link for anchor elements"
+                  "title": "a 要素のリンクの目的を説明するリンクテキストを提供する"
                 },
                 {
                   "id": "TECH:H24",
-                  "title": "Providing text alternatives for the area elements of image maps"
+                  "title": "イメージマップの area 要素に代替テキストを提供する"
                 },
                 {
                   "id": "TECH:FLASH27",
-                  "title": "Providing button labels that describe the purpose of a button"
+                  "title": "ボタンの目的を説明するラベルを提供する"
                 },
                 {
                   "id": "TECH:future5",
@@ -3743,7 +3743,7 @@
                 { "and": [
                   {
                     "id": "TECH:G91",
-                    "title": "Providing link text that describes the purpose of a link",
+                    "title": "Providing link text that describes the purpose of a link"
                   },
                   {
                     "id": "TECH:text1",
@@ -3751,11 +3751,11 @@
                     "using": [
                       {
                         "id": "TECH:PDF11",
-                        "title": "Providing links and link text using the Link annotation and the /Link structure element in PDF documents"
+                        "title": "Providing links and link text using the Link annotation and the \/Link structure element in PDF documents"
                       },
                       {
                         "id": "TECH:PDF13",
-                        "title": "Providing replacement text using the /Alt entry for links in PDF documents"
+                        "title": "Providing replacement text using the \/Alt entry for links in PDF documents"
                       },
                       {
                         "id": "TECH:SL18",
@@ -3768,11 +3768,11 @@
               {"advisory": [
                 {
                   "id": "TECH:H2",
-                  "title": "Combining adjacent image and text links for the same resource"
+                  "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                 },
                 {
                   "id": "TECH:FLASH5",
-                  "title": "Combining adjacent image and text buttons for the same resource"
+                  "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                 },
                 {
                   "id": "TECH:H80",
@@ -4012,15 +4012,15 @@
                 },
                 {
                   "id": "TECH:H30",
-                  "title": "Providing link text that describes the purpose of a link for anchor elements"
+                  "title": "a 要素のリンクの目的を説明するリンクテキストを提供する"
                 },
                 {
                   "id": "TECH:H24",
-                  "title": "Providing text alternatives for the area elements of image maps"
+                  "title": "イメージマップの area 要素に代替テキストを提供する"
                 },
                 {
                   "id": "TECH:FLASH27",
-                  "title": "Providing button labels that describe the purpose of a button"
+                  "title": "ボタンの目的を説明するラベルを提供する"
                 },
                 {
                   "id": "TECH:future6",
@@ -4054,11 +4054,11 @@
                   "using": [
                     {
                       "id": "TECH:PDF11",
-                      "title": "Providing links and link text using the Link annotation and the /Link structure element in PDF documents"
+                      "title": "Providing links and link text using the Link annotation and the \/Link structure element in PDF documents"
                     },
                     {
                       "id": "TECH:PDF13",
-                      "title": "Providing replacement text using the /Alt entry for links in PDF documents"
+                      "title": "Providing replacement text using the \/Alt entry for links in PDF documents"
                     },
                     {
                       "id": "TECH:SL18",
@@ -4070,11 +4070,11 @@
               {"advisory": [
                 {
                   "id": "TECH:H2",
-                  "title": "Combining adjacent image and text links for the same resource"
+                  "title": "隣り合った画像とテキストリンクを同じリンクの中に入れる"
                 },
                 {
                   "id": "TECH:FLASH5",
-                  "title": "Combining adjacent image and text buttons for the same resource"
+                  "title": "リンク先が同じで隣接している画像とテキストのボタンを結合する"
                 },
                 {
                   "id": "TECH:H33",
@@ -4254,7 +4254,7 @@
                 },
                 {
                   "id": "TECH:PDF16",
-                  "title": "Setting the default language using the /Lang entry in the document catalog of a PDF document"
+                  "title": "Setting the default language using the \/Lang entry in the document catalog of a PDF document"
                 },
                 {
                   "id": "TECH:PDF19",
@@ -4301,7 +4301,7 @@
               {"advisory": [
                 {
                   "id": "TECH:SL27",
-                  "title": "Using Language/Culture Properties as Exposed by Silverlight Applications and Assistive Technologies"
+                  "title": "Using Language\/Culture Properties as Exposed by Silverlight Applications and Assistive Technologies"
                 },
                 {
                   "id": "TECH:future2",
@@ -4335,7 +4335,7 @@
                       "using": [
                         {
                           "id": "TECH:G55",
-                          "title": "Linking to definitions",
+                          "title": "定義にリンクする",
                           "using": [
                             {
                               "id": "TECH:H40",
@@ -4363,7 +4363,7 @@
                       "using": [
                         {
                           "id": "TECH:G55",
-                          "title": "Linking to definitions",
+                          "title": "定義にリンクする",
                           "using": [
                             {
                               "id": "TECH:H40",
@@ -4395,7 +4395,7 @@
                     "using": [
                       {
                         "id": "TECH:G55",
-                        "title": "Linking to definitions",
+                        "title": "定義にリンクする",
                         "using": [
                           {
                             "id": "TECH:H40",
@@ -4472,7 +4472,7 @@
                         },
                         {
                           "id": "TECH:G55",
-                          "title": "Linking to definitions"
+                          "title": "定義にリンクする"
                         },
                         {
                           "id": "TECH:H28",
@@ -4490,7 +4490,7 @@
                       "using": [
                         {
                           "id": "TECH:G55",
-                          "title": "Linking to definitions"
+                          "title": "定義にリンクする"
                         },
                         {
                           "id": "TECH:G62",
@@ -4524,7 +4524,7 @@
                     "using": [
                       {
                         "id": "TECH:G55",
-                        "title": "Linking to definitions"
+                        "title": "定義にリンクする"
                       },
                       {
                         "id": "TECH:H28",
@@ -4870,11 +4870,11 @@
               {"sufficient": [{ "and": [
                   {
                     "id": "TECH:G197",
-                    "title": "Using labels, names, and text alternatives consistently for content that has the same functionality",
+                    "title": "Using labels, names, and text alternatives consistently for content that has the same functionality"
                   },
                   {
                     "id": "TECH:text1",
-                    "title": "following the <a href='#text-equiv-all'>sufficient techniques for Success Criterion 1.1.1</a> and <a href='#ensure-compat-rsv'>sufficient techniques for Success Criterion 4.1.2</a> for providing labels, names, and text alternatives",
+                    "title": "following the <a href='#text-equiv-all'>sufficient techniques for Success Criterion 1.1.1<\/a> and <a href='#ensure-compat-rsv'>sufficient techniques for Success Criterion 4.1.2<\/a> for providing labels, names, and text alternatives"
                   }
                 ]}
               ]},
@@ -5139,7 +5139,7 @@
                     },
                     {
                       "id": "TECH:ARIA9",
-                      "title": "Using aria-labelledby to concatenate a label from several text nodes"
+                      "title": "複数の語句をつなげて一つのラベルにするために、aria-labelledby を使用する"
                     },
                     {
                       "id": "TECH:ARIA17",
@@ -5177,19 +5177,19 @@
                 },
                 {
                   "id": "TECH:H44",
-                  "title": "Using label elements to associate text labels with form controls"
+                  "title": "テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する"
                 },
                 {
                   "id": "TECH:FLASH32",
-                  "title": "Using auto labeling to associate text labels with form controls"
+                  "title": "フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する"
                 },
                 {
                   "id": "TECH:FLASH29",
-                  "title": "Setting the label property for form components"
+                  "title": "フォーム・コンポーネントに label プロパティを設定す"
                 },
                 {
                   "id": "TECH:FLASH25",
-                  "title": "Labeling a form control by setting its accessible name"
+                  "title": "アクセシブルな名前を設定することによって、フォーム・コントロールにラベルを付ける"
                 },
                 {
                   "id": "TECH:PDF10",
@@ -5209,7 +5209,7 @@
                 },
                 {
                   "id": "TECH:H65",
-                  "title": "Using the title attribute to identify form controls when the label element cannot be used"
+                  "title": "label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する"
                 },
                 {
                   "id": "TECH:SL8",
@@ -5607,7 +5607,7 @@
             "techniques": [{"sufficient": [
               {
                 "id": "TECH:text1",
-                "title": "Following the <a href='http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>sufficient techniques for Success Criterion 3.3.4</a> for all forms that require the user to submit information."
+                "title": "Following the <a href='http:\/\/www.w3.org\/TR\/UNDERSTANDING-WCAG20\/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>sufficient techniques for Success Criterion 3.3.4<\/a> for all forms that require the user to submit information."
                }
             ]}]
           }
@@ -5736,7 +5736,7 @@
                       },
                       {
                         "id": "TECH:H44",
-                        "title": "Using label elements to associate text labels with form controls"
+                        "title": "テキストのラベルとフォーム・コントロールを関連付けるために、label 要素を使用する"
                       },
                       {
                         "id": "TECH:H64",
@@ -5744,7 +5744,7 @@
                       },
                       {
                         "id": "TECH:H65",
-                        "title": "Using the title attribute to identify form controls when the label element cannot be used"
+                        "title": "label 要素を使用することができないとき、フォーム・コントロールを特定するために、title 属性を使用する"
                       },
                       {
                         "id": "TECH:H88",
@@ -5773,15 +5773,15 @@
                   "using": [
                     {
                       "id": "TECH:FLASH32",
-                      "title": "Using auto labeling to associate text labels with form controls"
+                      "title": "フォーム・コントロールにテキストラベルを関連付けるために、自動ラベル機能を使用する"
                     },
                     {
                       "id": "TECH:FLASH29",
-                      "title": "Setting the label property for form components"
+                      "title": "フォーム・コンポーネントに label プロパティを設定す"
                     },
                     {
                       "id": "TECH:FLASH30",
-                      "title": "Specifying accessible names for image buttons"
+                      "title": "画像ボタンにアクセシブルな名前を指定する"
                     },
                     {
                       "id": "TECH:PDF10",
@@ -5856,7 +5856,7 @@
               },
               {
                 "id": "TECH:F20",
-                "title": "Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives when changes to non-text content occur"
+                "title": "達成基準 1.1.1 及び 達成基準 4.1.2 の失敗例 － 非テキストコンテンツの変更時に代替テキストを更新していない"
               },
               {
                 "id": "TECH:F68",
