@@ -277,7 +277,7 @@
                         },
                         {
                           "id": "TECH:H36",
-                          "title": "送信 \/ 実行ボタンとして用いる画像の alt 属性を使用する"
+                          "title": "送信 / 実行ボタンとして用いる画像の alt 属性を使用する"
                         },
                         {
                           "id": "TECH:H44",
@@ -1318,7 +1318,7 @@
                 "using": [
                   {
                     "id": "TECH:text1",
-                    "title": "<em>Example:<\/em> Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
+                    "title": "<em>Example:</em> Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
                   }
                 ]
               }]}
@@ -1496,7 +1496,7 @@
                         },
                         {
                           "id": "TECH:PDF11",
-                          "title": "PDF 文書内でLink アノテーションと \/Link 構造エレメントを使用してリンクとリンクテキストを提供する"
+                          "title": "PDF 文書内でLink アノテーションと /Link 構造エレメントを使用してリンクとリンクテキストを提供する"
                         },
                         {
                           "id": "TECH:PDF17",
@@ -1996,7 +1996,7 @@
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text\/background combinations"
+                  "title": "Using greater contrast level for red-black text/background combinations"
                 },
                 {
                   "id": "TECH:future6",
@@ -2353,7 +2353,7 @@
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text\/background combinations"
+                  "title": "Using greater contrast level for red-black text/background combinations"
                 },
                 {
                   "id": "TECH:future6",
@@ -2648,7 +2648,7 @@
                 },
                 {
                   "id": "TECH:future14",
-                  "title": "Show\/hide bullet points"
+                  "title": "Show/hide bullet points"
                 },
                 {
                   "id": "TECH:future15",
@@ -2796,7 +2796,7 @@
                     },
                     {
                       "id": "TECH:PDF11",
-                      "title": "PDF 文書内でLink アノテーションと \/Link 構造エレメントを使用してリンクとリンクテキストを提供する"
+                      "title": "PDF 文書内でLink アノテーションと /Link 構造エレメントを使用してリンクとリンクテキストを提供する"
                     },
                     {
                       "id": "TECH:PDF23",
@@ -2938,7 +2938,7 @@
             "techniques": [{"sufficient":[
               {
                 "id": "TECH:text1",
-                "title": "No additional techniques exist for this Success Criterion. Follow techniques for <a href='#keyboard-operation-keyboard-operable'>Success Criterion 2.1.1<\/a>. If that is not possible because there is a requirement for path-dependent input, then it is not possible to meet this Level AAA Success Criterion."
+                "title": "No additional techniques exist for this Success Criterion. Follow techniques for <a href='#keyboard-operation-keyboard-operable'>Success Criterion 2.1.1</a>. If that is not possible because there is a requirement for path-dependent input, then it is not possible to meet this Level AAA Success Criterion."
               }
             ]}]
           }
@@ -3751,11 +3751,11 @@
                     "using": [
                       {
                         "id": "TECH:PDF11",
-                        "title": "PDF 文書内でLink アノテーションと \/Link 構造エレメントを使用してリンクとリンクテキストを提供する"
+                        "title": "PDF 文書内でLink アノテーションと /Link 構造エレメントを使用してリンクとリンクテキストを提供する"
                       },
                       {
                         "id": "TECH:PDF13",
-                        "title": "PDF 文書内のリンクに対して \/Alt エントリを使用して代替テキストを提供する"
+                        "title": "PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する"
                       },
                       {
                         "id": "TECH:SL18",
@@ -4054,11 +4054,11 @@
                   "using": [
                     {
                       "id": "TECH:PDF11",
-                      "title": "PDF 文書内でLink アノテーションと \/Link 構造エレメントを使用してリンクとリンクテキストを提供する"
+                      "title": "PDF 文書内でLink アノテーションと /Link 構造エレメントを使用してリンクとリンクテキストを提供する"
                     },
                     {
                       "id": "TECH:PDF13",
-                      "title": "PDF 文書内のリンクに対して \/Alt エントリを使用して代替テキストを提供する"
+                      "title": "PDF 文書内のリンクに対して /Alt エントリを使用して代替テキストを提供する"
                     },
                     {
                       "id": "TECH:SL18",
@@ -4254,7 +4254,7 @@
                 },
                 {
                   "id": "TECH:PDF16",
-                  "title": "PDF 文書の文書カタログ内の \/Lang エントリを使用してデフォルト言語を設定する"
+                  "title": "PDF 文書の文書カタログ内の /Lang エントリを使用してデフォルト言語を設定する"
                 },
                 {
                   "id": "TECH:PDF19",
@@ -4301,7 +4301,7 @@
               {"advisory": [
                 {
                   "id": "TECH:SL27",
-                  "title": "Using Language\/Culture Properties as Exposed by Silverlight Applications and Assistive Technologies"
+                  "title": "Using Language/Culture Properties as Exposed by Silverlight Applications and Assistive Technologies"
                 },
                 {
                   "id": "TECH:future2",
@@ -4874,7 +4874,7 @@
                   },
                   {
                     "id": "TECH:text1",
-                    "title": "following the <a href='#text-equiv-all'>sufficient techniques for Success Criterion 1.1.1<\/a> and <a href='#ensure-compat-rsv'>sufficient techniques for Success Criterion 4.1.2<\/a> for providing labels, names, and text alternatives"
+                    "title": "following the <a href='#text-equiv-all'>sufficient techniques for Success Criterion 1.1.1</a> and <a href='#ensure-compat-rsv'>sufficient techniques for Success Criterion 4.1.2</a> for providing labels, names, and text alternatives"
                   }
                 ]}
               ]},
@@ -5607,7 +5607,7 @@
             "techniques": [{"sufficient": [
               {
                 "id": "TECH:text1",
-                "title": "Following the <a href='http:\/\/www.w3.org\/TR\/UNDERSTANDING-WCAG20\/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>sufficient techniques for Success Criterion 3.3.4<\/a> for all forms that require the user to submit information."
+                "title": "Following the <a href='http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>sufficient techniques for Success Criterion 3.3.4</a> for all forms that require the user to submit information."
                }
             ]}]
           }
