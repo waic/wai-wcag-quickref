@@ -18,7 +18,7 @@
           "id": "WCAG2:text-equiv-all",
           "num": "1.1.1",
           "level": "A",
-          "handle": "非テキストコンテンツ (non-text content)",
+          "handle": "非テキストコンテンツ",
           "title": "利用者に提示されるすべての非テキストコンテンツには、同等の目的を果たすテキストによる代替が提供されている。",
           "details": [{
             "type": "ulist",
