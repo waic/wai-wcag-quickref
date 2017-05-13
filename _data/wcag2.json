@@ -8,11 +8,11 @@
       {
         "id": "WCAG2:text-equiv",
         "num": "1.1",
-        "handle": "テキストによる代替 (text alternative)",
+        "handle": "テキストによる代替",
         "title": "すべての非テキストコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などの利用者が必要とする形式に変換できるように、テキストによる代替を提供すること。",
         "techniques": [{"advisory": [{
           "id": "TECH:future1",
-          "title": "Providing sign language videos for audio-only files"
+          "title": "音声しか含まないファイルに手話ビデオを提供する"
         }]}],
         "successcriteria": [{
           "id": "WCAG2:text-equiv-all",
@@ -233,7 +233,7 @@
                     "id": "TECH:G82",
                     "title": "非テキストコンテンツの目的を特定する代替テキストを提供する",
                     "using": [{"group": {
-                      "title": "Text alternative techniques for controls and input for Situation C:",
+                      "title": "状況 C におけるコントロールと入力のための短いテキストによる代替の達成方法:",
                       "techniques": [
                         {
                           "id": "TECH:ARIA6",
@@ -550,56 +550,56 @@
                 "techniques": [
                   {
                     "id": "TECH:future1",
-                    "title": "Identifying informative non-text content"
+                    "title": "参考情報の非テキストコンテンツを識別する"
                   },
                   {
                     "id": "TECH:future2",
-                    "title": "Keeping short descriptions short"
+                    "title": "簡潔な説明を短く保つ"
                   },
                   {
                     "id": "TECH:future3",
-                    "title": "Describing images that include text"
+                    "title": "テキストを含む画像を説明する"
                   },
                   {
                     "id": "TECH:future4",
-                    "title": "Providing a longer description of the non-text content where only a descriptive label is required using a technology-specific technique (for an accessibility-supported content technology) for long description listed above"
+                    "title": "上に挙げる長い説明のためのウェブコンテンツ技術特有の達成方法（アクセシビリティ・サポーテッドなコンテンツ技術）を用いて、説明のラベルが求められるところだけで、非テキストコンテンツのより長い説明を提供する"
                   },
                   {
                     "id": "TECH:future5",
-                    "title": "Providing different sizes for non-text content when it cannot have an equivalent accessible alternative"
+                    "title": "非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する"
                   },
                   {
                     "id": "TECH:future6",
-                    "title": "Using server-side scripts to resize images of text"
+                    "title": "画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う"
                   }
                 ]
               },
               {
-                "title": "General Techniques for Live Non-Text Content (Advisory)",
+                "title": "ライブの非テキストコンテンツに関する一般的な達成方法（参考）",
                 "techniques": [{
                   "id": "TECH:future1",
-                  "title": "Linking to textual information that provides comparable information (e.g., for a traffic Webcam, a municipality could provide a link to the text traffic report.)"
+                  "title": "同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする"
                 }]
               },
               {
-                "title": "General techniques to minimize the barrier of CAPTCHAs",
+                "title": "CAPTCHAの障壁を最小化する一般的な達成方法",
                 "techniques": [
                   {
                     "id": "TECH:future1",
-                    "title": "Providing more than two modalities of CAPTCHAs"
+                    "title": "CAPTCHAを3つ以上の感覚モダリティで提供する"
                   },
                   {
                     "id": "TECH:future2",
-                    "title": "Providing access to a human customer service representative who can bypass CAPTCHA"
+                    "title": "CAPTCHA を使用しないでもすむように、カスタマーサービスの担当者に連絡できるようにする"
                   },
                   {
                     "id": "TECH:future3",
-                    "title": "Not requiring CAPTCHAs for authorized users"
+                    "title": "許可した利用者には CAPTCHA を要求しない"
                   }
                 ]
               },
               {
-                "title": "HTML Techniques (Advisory)",
+                "title": "HTMLの達成方法（参考）",
                 "techniques": [
                   {
                     "id": "TECH:H46",
@@ -607,24 +607,24 @@
                   },
                   {
                     "id": "TECH:future2",
-                    "title": "Writing for browsers that do not support frame"
+                    "title": "フレームをサポートしないブラウザのために作成する"
                   },
                   {
                     "id": "TECH:future3",
-                    "title": "Providing alternative content for iframe"
+                    "title": "iframe要素の代替コンテンツを提供する"
                   },
                   {
                     "id": "TECH:future4",
-                    "title": "Not using long descriptions for iframe"
+                    "title": "iframe要素の長い説明を使わない"
                   },
                   {
                     "id": "TECH:future5",
-                    "title": "Providing redundant text links for client-side image maps"
+                    "title": "クライアントサイドイメージマップのために冗長なテキストリンクを提供する"
                   }
                 ]
               },
               {
-                "title": "CSS Techniques (Advisory)",
+                "title": "CSSの達成方法（参考）",
                 "techniques": [
                   {
                     "id": "TECH:C18",
@@ -632,46 +632,46 @@
                   },
                   {
                     "id": "TECH:future2",
-                    "title": "Using CSS background, :before or :after rules for decorative images instead of img elements"
+                    "title": "装飾のためのimg要素の代わりに、CSSのbackgroundプロパティと:beforeあるいは:afterルールを使う"
                   },
                   {
                     "id": "TECH:future3",
-                    "title": "Displaying empty table cells"
+                    "title": "空のtable要素のセルを表示する"
                   }
                 ]
               },
               {
-                "title": "WAI-ARIA Techniques (Advisory)",
+                "title": "WAI-ARIAの達成方法（参考）",
                 "techniques": [{
                   "id": "TECH:future1",
-                  "title": "Using the ARIA presentation role to indicate elements are purely presentational"
+                  "title": "表現のためだけの要素を示すためにARIA表示を使う"
                 }]
               },
               {
-                "title": "Silverlight Techniques (Advisory)",
+                "title": "Silverlightの達成方法（参考）",
                 "techniques": [{
                   "id": "TECH:SL19",
                   "title": "Providing User Instructions With AutomationProperties.HelpText in Silverlight"
                 }]
               },
               {
-                "title": "Metadata Techniques (Advisory)",
+                "title": "メタデータの達成方法（参考",
                 "techniques": [
                   {
                     "id": "TECH:future1",
-                    "title": "Using metadata to associate text transcriptions with a video"
+                    "title": "テキストトランスクリプションと映像を関連付けるためにメタデータを使う"
                   },
                   {
                     "id": "TECH:future2",
-                    "title": "Using metadata to associate text transcriptions with audio-only content",
+                    "title": "テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う",
                     "using": [
                       {
                         "id": "TECH:future1",
-                        "title": "EXAMPLE: Providing, in metadata, URI(s) that points to an audio description and a text transcript of a video."
+                        "title": "事例：メタデータの中で、音声ガイドと映像のテキスト記述を指し示すURIを提供する"
                       },
                       {
                         "id": "TECH:future2",
-                        "title": "EXAMPLE: Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
+                        "title": "事例：メタデータの中で、音声ファイルのいくつかのテキスト記述（英語、フランス語、ドイツ語）を指し示すURIを提供する"
                       }
                     ]
                   }
@@ -752,7 +752,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the content is prerecorded audio-only:",
+                  "title": "状況 A： 収録済の音声しか含まないコンテンツの場合：",
                   "techniques": [
                     {
                       "id": "TECH:G158",
@@ -765,7 +765,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If the content is prerecorded video-only:",
+                  "title": "状況 B： 収録済の映像しか含まないコンテンツの場合：",
                   "techniques": [
                     {
                       "id": "TECH:G159",
@@ -789,11 +789,11 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a transcript of a live audio only presentation after the fact"
+                  "title": "事後に、ライブの音声しか含まないプレゼンテーションの書き起こしテキストを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Linking to textual information that provides comparable information (e.g., for a traffic Webcam, a municipality could provide a link to the text traffic report.)"
+                  "title": "同程度の情報を提供するテキスト情報（例えば、交通のウェブカメラに対して、自治体の提供するテキストの交通情報へのリンク）にリンクする"
                 }
               ]},
               {"failure": [
@@ -858,15 +858,15 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing a note saying \"No sound is used in this clip\" for video-only clips"
+                  "title": "映像しか含まないクリップに対して、「このクリップには音は使われていません」というノートを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using SMIL 1.0 to provide captions for all languages for which there are audio tracks"
+                  "title": "オーディオトラックのすべての言語のキャプションを提供するためにSMIL 1.0を使う"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using SMIL 2.0 to provide captions for all languages for which there are audio tracks"
+                  "title": "オーディオトラックのすべての言語のキャプションを提供するためにSMIL 2.0を使う"
                 }
               ]},
               {"failure": [
@@ -909,7 +909,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Linking to the alternative for time-based media",
+                  "title": "時間の経過とともに変化するメディアの代替へのリンクを提供する",
                   "using": [{
                     "id": "TECH:H53",
                     "title": "object 要素のボディを使用する"
@@ -951,7 +951,7 @@
                     },
                     {
                       "id": "TECH:future5",
-                      "title": "Using any player that supports audio and video"
+                      "title": "音声及び映像をサポートしているプレーヤーを用いる"
                     }
                   ]
                 },
@@ -977,7 +977,7 @@
                     },
                     {
                       "id": "TECH:future5",
-                      "title": "Using any player that supports audio and video"
+                      "title": "音声及び映像をサポートしているプレーヤーを用いる"
                     }
                   ]
                 },
@@ -993,11 +993,11 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing audio description in multiple languages in SMIL 1.0"
+                  "title": "SMIL 1.0によって多様な言語の音声ガイドを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing audio description in multiple languages in SMIL 2.0"
+                  "title": "SMIL 2.0によって多様な言語の音声ガイドを提供する"
                 }
               ]}
             ]
@@ -1096,7 +1096,7 @@
                     },
                     {
                       "id": "TECH:future4",
-                      "title": "Using any player that supports audio and video"
+                      "title": "音声及び映像をサポートしているプレーヤーを用いる"
                     }
                   ]
                 },
@@ -1118,7 +1118,7 @@
                     },
                     {
                       "id": "TECH:future4",
-                      "title": "Using any player that supports audio and video"
+                      "title": "音声及び映像をサポートしているプレーヤーを用いる"
                     }
                   ]
                 },
@@ -1134,15 +1134,15 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing audio description in multiple languages in SMIL 1.0"
+                  "title": "SMIL 1.0によって多様な言語の音声ガイドを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing audio description in multiple languages in SMIL 2.0"
+                  "title": "SMIL 2.0によって多様な言語の音声ガイドを提供する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing audio description for live synchronized media"
+                  "title": "ライブの同期したメディアに対して音声ガイドを提供する"
                 }
               ]}
             ]
@@ -1175,13 +1175,13 @@
                 }
               ]},
               {"advisory": [{"situations": [{
-                "title": "Metadata Techniques",
+                "title": "メタデータの達成方法",
                 "techniques": [{
                   "id": "TECH:future1",
-                  "title": "Using metadata to associate sign language alternatives of a video to enable choice of sign language",
+                  "title": "メタデータを使って映像の代替である手話を対応付け、手話の選択ができるようにする",
                   "using": [{
                     "id": "TECH:future1",
-                    "title": "EXAMPLE: Providing, in metadata, URI(s) that point to several English sign language translations (ASL, SASL, BSL, Auslan, ISL, NZSL) of a Web page."
+                    "title": "事例：ウェブページの様々な英国式の手話通訳（ASL, SASL, BSL, Auslan, ISL, NZSL）を指し示すURIを、メタデータの中で、提供する"
                   }]
                 }]
               }]}]}
@@ -1208,7 +1208,7 @@
                   },
                   {
                     "id": "TECH:future3",
-                    "title": "Using any player that supports audio and video"
+                    "title": "音声及び映像をサポートしているプレーヤーを用いる"
                   }
                 ]
               }]},
@@ -1219,11 +1219,11 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Adding extended audio description in multiple languages in SMIL 1.0"
+                  "title": "SMIL1.0で多様な言語における拡張した音声ガイドを追加する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Adding extended audio description in multiple languages in SMIL 2.0"
+                  "title": "SMIL2.0で多様な言語における拡張した音声ガイドを追加する"
                 }
               ]}
             ]
@@ -1237,7 +1237,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the content is prerecorded synchronized media:",
+                  "title": "状況 A： 収録済の同期したメディアの場合：",
                   "techniques": [
                     {
                       "id": "TECH:G69",
@@ -1255,7 +1255,7 @@
                     },
                     {
                       "id": "TECH:future2",
-                      "title": "Linking to the alternative for time-based media",
+                      "title": "時間の経過とともに変化するメディアの代替へのリンクを提供する",
                       "using": [{
                         "id": "TECH:H53",
                         "title": "object 要素のボディを使用する"
@@ -1264,7 +1264,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If the content is prerecorded video-only:",
+                  "title": "状況 B： 収録済の映像しか含まないコンテンツの場合：",
                   "techniques": [{
                     "id": "TECH:G159",
                     "title": "時間の経過に伴って変化するメディアの映像しか含まないコンテンツに対して代替コンテンツを提供する"
@@ -1278,11 +1278,11 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a corrected script"
+                  "title": "訂正済みのスクリプトを使う"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Adding detail to audio description"
+                  "title": "音声ガイドの詳細を追加する"
                 }
               ]},
               {"failure": [{
@@ -1314,11 +1314,11 @@
               ]},
               {"advisory": [{
                 "id": "TECH:future1",
-                "title": "Using metadata to associate text transcriptions with audio-only content",
+                "title": "テキストトランスクリプションと音声しか含まないコンテンツを関連付けるためにメタデータを使う",
                 "using": [
                   {
                     "id": "TECH:text1",
-                    "title": "<em>Example:</em> Providing, in metadata, URI(s) that point to several text transcripts (English, French, Dutch) of an audio file."
+                    "title": "<em>事例:</em> 音声ファイルの様々な書き起こしテキスト（英語、フランス語、ドイツ語）を指し示すURIを、メタデータの中で、提供する。"
                   }
                 ]
               }]}
@@ -1329,7 +1329,7 @@
       {
         "id": "WCAG2:content-structure-separation",
         "num": "1.3",
-        "handle": "Adaptable",
+        "handle": "適応可能",
         "title": "情報、及び構造を損なうことなく、様々な方法 (例えば、よりシンプルなレイアウト) で提供できるようにコンテンツを制作すること。",
         "techniques": [],
         "successcriteria": [
@@ -1342,7 +1342,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: The technology provides semantic structure to make information and relationships conveyed through presentation programmatically determinable:",
+                  "title": "状況 A： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供している場合：",
                   "techniques": [
                     {
                       "id": "TECH:ARIA11",
@@ -1388,7 +1388,7 @@
                     },
                     {
                       "id": "TECH:future10",
-                      "title": "Making information and relationships conveyed through presentation programmatically determinable using the following techniques:",
+                      "title": "表現によって伝えられている情報及び関係性をプログラムが解釈できるようにする:",
                       "using": [
                         {
                           "id": "TECH:G138",
@@ -1515,7 +1515,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: The technology in use does NOT provide the semantic structure to make the information and relationships conveyed through presentation programmatically determinable:",
+                  "title": "状況 B： ウェブコンテンツ技術が、表現によって伝えている情報及び関係性をプログラムが解釈可能にするセマンテックな構造を提供していない場合：",
                   "techniques": [
                     {
                       "id": "TECH:G117",
@@ -1527,7 +1527,7 @@
                     },
                     {
                       "id": "TECH:future3",
-                      "title": "Making information and relationships conveyed through presentation programmatically determinable or available in text using the following techniques:",
+                      "title": "表現によって伝えられている情報及び関係性をプログラムが解釈可能にする、又は次の達成方法を用いてテキストで入手可能にする：",
                       "using": [
                         {
                           "id": "TECH:T1",
@@ -1553,7 +1553,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using CSS rather than tables for page layout"
+                  "title": "ページレイアウトにはテーブルよりもCSSを用いる"
                 },
                 {
                   "id": "TECH:G162",
@@ -1569,7 +1569,7 @@
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Providing labels for all form controls that do not have implicit labels"
+                  "title": "暗黙のラベルを持たないすべてのフォーム コントロールにラベルを付加する"
                 },
                 {
                   "id": "TECH:G141",
@@ -1643,7 +1643,7 @@
                 {"and": [
                   {
                     "id": "TECH:text1",
-                    "title": "Marking sequences in the content as meaningful"
+                    "title": "コンテンツの並び順を意味のあるものにする"
                   },
                   {
                     "id": "TECH:G57",
@@ -1688,15 +1688,15 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using left-justified text for languages that are written left to right and right-justified text for languages that are written right-to-left"
+                  "title": "左から右へ書き綴る言語は左寄せを使い、右から左へ書き綴る言語は右寄せを用いる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a link to linearized rendering"
+                  "title": "線形化された描画のリンクを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing a style switcher between style sheets that affect presentation order"
+                  "title": "表現順序に影響するスタイルシートの切替を提供する"
                 }
               ]},
               {"failure": [
@@ -1732,7 +1732,7 @@
             "details": [{
               "type": "note",
               "handle": "注記 1",
-              "text": "For requirements related to color, refer to Guideline 1.4."
+              "text": "色に関する要件は、ガイドライン 1.4を参照。"
             }],
             "techniques": [
               {"sufficient": [{
@@ -1741,7 +1741,7 @@
               }]},
               {"advisory": [{
                 "id": "TECH:future1",
-                "title": "Using an image with a text alternative for graphical symbols instead of a Unicode font glyph with the desired graphical appearance but different meaning"
+                "title": "デザイン的にグラフィカルな表現だが異なる意味を持つUnicodeフォントの代わりにグラフィカルなシンボルとして代替えテキストのある画像を用いる"
               }]},
               {"failure": [
                 {
@@ -1760,20 +1760,20 @@
       {
         "id": "WCAG2:visual-audio-contrast",
         "num": "1.4",
-        "handle": "Distinguishable",
+        "handle": "判別可能",
         "title": "コンテンツを、利用者にとって見やすく、聞きやすいものにすること。これには、前景と背景を区別することも含む。",
         "techniques": [{"advisory": [
           {
             "id": "TECH:future1",
-            "title": "Using readable fonts"
+            "title": "読みやすいフォントを用いる（"
           },
           {
             "id": "TECH:future2",
-            "title": "Making sure any text in images of text is at least 14 points and has good contrast"
+            "title": "画像化されたテキストが、少なくとも14ポイント以上で、十分なコントラストを持つか確認する"
           },
           {
             "id": "TECH:future3",
-            "title": "Providing a highly visible highlighting mechanism for links or controls when they receive keyboard focus"
+            "title": "リンク又はコントロールがキーボードのフォーカスを受けるとき、可視的なメカニズムを提供する"
           }
         ]}],
         "successcriteria": [
@@ -1781,17 +1781,17 @@
             "id": "WCAG2:visual-audio-contrast-without-color",
             "num": "1.4.1",
             "level": "A",
-            "handle": "Use of Color",
+            "handle": "色の使用",
             "title": "色が、情報を伝える、動作を示す、反応を促す、又は視覚的な要素を判別するための唯一の視覚的手段になっていない。",
             "details": [{
               "type": "note",
               "handle": "注記 1",
-              "text": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
+              "text": "この達成基準は、特に色の知覚に関するものである。その他の知覚形態については、色やその他の視覚的提示のコーディングへのプログラムによるアクセスも含めて、ガイドライン 1.3で網羅されている。"
             }],
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the color of particular words, backgrounds, or other content is used to indicate information:",
+                  "title": "状況 A： 特定の語句、背景、又は他のコンテンツの色を用いて情報を示している場合：",
                   "techniques": [
                     {
                       "id": "TECH:G14",
@@ -1812,7 +1812,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If color is used within an image to convey information:",
+                  "title": "状況 B： 情報を伝える画像の中で色を用いている場合：",
                   "techniques": [
                     {
                       "id": "TECH:G111",
@@ -1828,7 +1828,7 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Conveying information redundantly using color"
+                  "title": "色を冗長的に使って情報を伝える"
                 },
                 {
                   "id": "TECH:C15",
@@ -1895,7 +1895,7 @@
               ]},
               {"advisory": [{
                 "id": "TECH:future1",
-                "title": "Providing a site-wide preference to turn off audio in addition to providing a control near the top of the Web page that turns off sounds that play automatically"
+                "title": "自動的に再生される音を停止できる、ウェブページの先頭付近に提供されるコントロールに加えて、音声を停止できる広域サイト設定を提供する"
               }]},
               {"failure": [
                 {
@@ -1935,7 +1935,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: text is less than 18 point if not bold and less than 14 point if bold",
+                  "title": "状況 A： 太字でないテキストが18ポイント（日本語は22ポイント）未満、太字のテキストが14ポイント（日本語は18ポイント）未満の場合",
                   "techniques": [
                     {
                       "id": "TECH:G18",
@@ -1956,7 +1956,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: text is at least 18 point if not bold and at least 14 point if bold",
+                  "title": "太字でないテキストが少なくとも18ポイント（日本語は22ポイント）以上、太字のテキストが少なくとも14ポイント（日本語は18ポイント）以上の場合",
                   "techniques": [
                     {
                       "id": "TECH:G145",
@@ -1984,43 +1984,43 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using a higher contrast value for text that is over a patterned background"
+                  "title": "模様のついた背景色にテキストを重ねるためにより高いコントラストの値を用いる"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using Unicode text and style sheets instead of images of text"
+                  "title": "画像化された文字の代わりにUnicodeテキストとスタイルシートを用いる"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using a higher contrast values for lines in diagrams"
+                  "title": "図表の線に、より高いコントラストの値を用いる"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text/background combinations"
+                  "title": "赤と黒の組み合わせによる文字と背景色には、さらに大きなコントラストレベルを用いる"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Using colors that are composed predominantly of mid spectral components for the light and spectral extremes (blue and red wavelengths) for the dark"
+                  "title": "主に中間のスペクトル要素からなる明るい要素とスペクトルの両端（青と赤の波長）からなる暗い要素で構成された色を用いる"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Using a light pastel background rather than a white background behind black text to create sufficient but not extreme contrast"
+                  "title": "両端のコントラストではなく黒文字に白の背景よりも明るいパステルの背景色を用いる"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Making icons using simple line drawings that meet the contrast provisions for text"
+                  "title": "テキストのコントラストを満たしているシンプルな線で描かれたアイコンを使う"
                 },
                 {
                   "id": "TECH:future9",
-                  "title": "Providing sufficient contrast ratio in graphs and charts"
+                  "title": "グラフやチャートに十分なコントラストを提供する"
                 },
                 {
                   "id": "TECH:future10",
-                  "title": "Using a 3:1 contrast ratio or higher as the default presentation"
+                  "title": "デフォルトの表現に3:1のコントラスト比又はそれ以上を用いる"
                 },
                 {
                   "id": "TECH:future11",
-                  "title": "Providing sufficient color contrast for empty text fields"
+                  "title": "空のテキストフィールドに十分な色のコントラストを提供する"
                 }
               ]},
               {"failure": [
@@ -2057,7 +2057,7 @@
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Ensuring that text containers resize when the text resizes AND using measurements that are relative to other measurements in the content",
+                  "title": "テキストのサイズを変更した際に、テキスト・コンテナもサイズ変更するようにする、かつ、次の達成方法の一つ以上を用いて、コンテンツにあるその他の大きさと相対的な大きさにする",
                   "using": [
                     {
                       "id": "TECH:C28",
@@ -2065,7 +2065,7 @@
                     },
                     {
                       "id": "TECH:future2",
-                      "title": "Techniques for relative measurements",
+                      "title": "相対的な大きさの達成方法",
                       "using": [
                         {
                           "id": "TECH:C12",
@@ -2083,7 +2083,7 @@
                     },
                     {
                       "id": "TECH:future3",
-                      "title": "Techniques for text container resizing",
+                      "title": "テキスト・コンテナのサイズを可変にする達成方法",
                       "using": [
                         {
                           "id": "TECH:SCR34",
@@ -2109,36 +2109,36 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing large fonts by default"
+                  "title": "デフォルトで大きなフォントを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using page-percent for container sizes"
+                  "title": "ページ比率のコンテナーサイズを用いる"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Avoiding scaling font sizes smaller than the user-agent default",
+                  "title": "ユーザエージェントのデフォルトよりも小さなサイズのフォント尺度を使わない",
                   "notes": ["The author won't actually know the font size, but should avoid percentage scaling that results in less than 100%"]
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Avoiding justified text"
+                  "title": "両端揃えは避ける"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Providing sufficient inter-line and inter-column spacing"
+                  "title": "十分なスペースを持った行間を提供する"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Providing different sizes for non-text content when it cannot have an equivalent accessible alternative"
+                  "title": "非テキストコンテンツが等価でアクセシブルな代替が無い場合、大きさの異なる非テキストコンテンツを提供する"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Avoiding the use of text in raster images"
+                  "title": "ビットマップ（ラスター画像）の文字の利用を避ける"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Using server-side scripts to resize images of text"
+                  "title": "画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う"
                 },
                 {
                   "id": "TECH:C17",
@@ -2146,11 +2146,11 @@
                 },
                 {
                   "id": "TECH:future10",
-                  "title": "Ensuring that text in raster images is at least 18pt"
+                  "title": "少なくとも18ポイント以上のビットマップ（ラスター画像）の文字を保証する"
                 },
                 {
                   "id": "TECH:future11",
-                  "title": "Scaling text down to 50%"
+                  "title": "文字サイズを50％に縮小する"
                 },
                 {
                   "id": "TECH:C20",
@@ -2162,7 +2162,7 @@
                 },
                 {
                   "id": "TECH:future14",
-                  "title": "Providing a mechanism to allow captions to be enlarged"
+                  "title": "拡大するメカニズムをもつキャプションを提供する"
                 }
               ]},
               {"failure": [
@@ -2188,12 +2188,12 @@
                 "type": "ulist",
                 "items": [
                   {
-                    "handle": "Customizable",
-                    "text": "The image of text can be visually customized to the user's requirements;"
+                    "handle": "カスタマイズ可能",
+                    "text": "文字画像は、利用者の要求に応じた視覚的なカスタマイズができる。"
                   },
                   {
-                    "handle": "Essential",
-                    "text": "A particular presentation of text is essential to the information being conveyed."
+                    "handle": "必要不可欠",
+                    "text": "テキストの特定の表現が、伝えようとする情報にとって必要不可欠である。"
                   }
                 ]
               },
@@ -2228,14 +2228,14 @@
               ]},
               {"advisory": [{"situations": [
                 {
-                  "title": "General techniques for non-text content",
+                  "title": "非テキストコンテンツ向けの一般的な達成方法",
                   "techniques": [{
                     "id": "TECH:future1",
-                    "title": "Identifying informative non-text content"
+                    "title": "参考情報の非テキストコンテンツを識別する"
                   }]
                 },
                 {
-                  "title": "CSS Techniques",
+                  "title": "CSS による達成方法",
                   "techniques": [
                     {
                       "id": "TECH:C12",
@@ -2259,7 +2259,7 @@
                     },
                     {
                       "id": "TECH:future6",
-                      "title": "Avoid applying text styling to text characters within a word"
+                      "title": "1文字以内でデザインされるテキスト文字を避ける"
                     }
                   ]
                 }
@@ -2292,7 +2292,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: text is less than 18 point if not bold and less than 14 point if bold",
+                  "title": "状況 A： 太字でないテキストが18ポイント（日本語は22ポイント）未満、太字のテキストが14ポイント（日本語は18ポイント）未満の場合",
                   "techniques": [
                     {
                       "id": "TECH:G17",
@@ -2313,7 +2313,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: text is as least 18 point if not bold and at least 14 point if bold",
+                  "title": "状況 B：太字でないテキストが少なくとも18ポイント（日本語は22ポイント）以上、太字のテキストが少なくとも14ポイント（日本語は18ポイント）以上の場合",
                   "techniques": [
                     {
                       "id": "TECH:G18",
@@ -2341,43 +2341,43 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using a higher contrast value for text that is over a patterned background"
+                  "title": "模様のついた背景色にテキストを重ねるためにより高いコントラストの値を用いる"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using Unicode text and style sheets instead of images of text"
+                  "title": "画像化された文字の代わりにUnicodeテキストとスタイルシートを用いる"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using a higher contrast values for lines in diagrams"
+                  "title": "図表の線に、より高いコントラストの値を用いる"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using greater contrast level for red-black text/background combinations"
+                  "title": "赤と黒の組み合わせによる文字と背景色には、さらに大きなコントラストレベルを用いる"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Using colors that are composed predominantly of mid spectral components for the light and spectral extremes (blue and red wavelengths) for the dark"
+                  "title": "主に中間のスペクトル要素からなる明るい要素とスペクトルの両端（青と赤の波長）からなる暗い要素で構成された色を用いる"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Using a light pastel background rather than a white background behind black text to create sufficient but not extreme contrast"
+                  "title": "両端のコントラストではなく黒文字に白の背景よりも明るいパステルの背景色を用いる"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Making icons using simple line drawings that meet the contrast provisions for text"
+                  "title": "テキストのコントラストを満たしているシンプルな線で描かれたアイコンを使う"
                 },
                 {
                   "id": "TECH:future9",
-                  "title": "Providing sufficient contrast ratio in graphs and charts"
+                  "title": "グラフやチャートに十分なコントラストを提供する"
                 },
                 {
                   "id": "TECH:future10",
-                  "title": "Using a 3:1 contrast ratio or higher as the default presentation"
+                  "title": "デフォルトの表現に3:1のコントラスト比又はそれ以上を用いる"
                 },
                 {
                   "id": "TECH:future11",
-                  "title": "Providing sufficient color contrast for empty text fields"
+                  "title": "空のテキストフィールドに十分な色のコントラストを提供する"
                 }
               ]},
               {"failure": [
@@ -2423,11 +2423,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing a way for users to adjust auditory levels of foreground and background sound independently"
+                  "title": "前景音と背景音のレベルを独立して調節できる方法を提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing an audio track for synchronized media that includes background sounds that are at least 20 decibels lower than speech"
+                  "title": "発話より少なくとも20デシベル低い背景音を含む同期したメディアに対して、音声トラックを提供する"
                 }
               ]}
             ]
@@ -2466,7 +2466,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "First Requirement: Techniques to ensure foreground and background colors can be selected by the user",
+                  "title": "要件 1： 前景色及び背景色を利用者が選択可能にする達成方法",
                   "techniques": [
                     {
                       "id": "TECH:C23",
@@ -2496,7 +2496,7 @@
                   ]
                 },
                 {
-                  "title": "Second Requirement: Techniques to ensure width is no more than 80 characters or glyphs (40 if CJK)",
+                  "title": "要件 2： 幅が図形記号を含めて80文字以下（全角の場合は40文字以下）になるようにする達成方法",
                   "techniques": [
                     {
                       "id": "TECH:G204",
@@ -2510,7 +2510,7 @@
                   ]
                 },
                 {
-                  "title": "テキストが、均等割り付けされていない (両端揃えではない)",
+                  "title": "要件 3： テキストを均等割り付け（左右両端揃え）にしないようにする達成方法",
                   "techniques": [
                     {
                       "id": "TECH:C19",
@@ -2529,7 +2529,7 @@
                   ]
                 },
                 {
-                  "title": "Fourth Requirement: Techniques to ensure line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing",
+                  "title": "要件 4： 段落内の行送り幅（行間隔）が少なくとも1.5文字分、及び段落の間隔がその行送り幅の少なくとも1.5倍になるようにする達成方法",
                   "techniques": [
                     {
                       "id": "TECH:G188",
@@ -2553,7 +2553,7 @@
                     {
                       "id": "TECH:G146",
                       "title": "リキッドレイアウトを使用する",
-                      "append": "AND using measurements that are relative to other measurements in the content by",
+                      "append": "かつ、次の達成方法の一つ以上を用いて、コンテンツにあるその他の大きさと相対的な大きさにする",
                       "using": [
                         {
                           "id": "TECH:C12",
@@ -2596,63 +2596,63 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using a hover effect to highlight a paragraph, list items, or table cells (CSS)"
+                  "title": "パラグラフ、リスト又はテーブルセルをハイライトするのにHover効果を用いる (CSS)"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Presenting text in sans serif font or providing a mechanism to achieve this (CSS)"
+                  "title": "sans serif フォント又はそれを達成できるメカニズムを提供する(CSS)"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using vertical (bulleted or numbered) lists rather than inline lists"
+                  "title": "インラインリストよりもリスト（ビュレット又は番号順）を用いる"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using upper and lower case according to the spelling conventions of the text language"
+                  "title": "テキスト言語の綴りの慣習に従って上付又は下付を用いる"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Providing large fonts by default"
+                  "title": "デフォルトで大きなフォントを提供する"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Avoiding the use of text in raster images"
+                  "title": "ビットマップ（ラスター画像）の文字の利用を避ける"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Avoiding scaling font sizes smaller than the user-agent default"
+                  "title": "ユーザエージェントのデフォルトよりも小さなサイズのフォント尺度を使わない"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Providing sufficient inter-column spacing"
+                  "title": "十分なスペースを持った行間を提供する"
                 },
                 {
                   "id": "TECH:future9",
-                  "title": "Avoiding centrally aligned text"
+                  "title": "中心揃えの文字を使わない"
                 },
                 {
                   "id": "TECH:future10",
-                  "title": "Avoiding chunks of italic text"
+                  "title": "イタリックテキストをたくさんを使わない"
                 },
                 {
                   "id": "TECH:future11",
-                  "title": "Avoiding overuse of different styles on individual pages and in sites"
+                  "title": "個々のページやサイト内で異なるスタイルを乱用しない"
                 },
                 {
                   "id": "TECH:future12",
-                  "title": "Making links visually distinct"
+                  "title": "視覚的に異なるリンクを用いる"
                 },
                 {
                   "id": "TECH:future13",
-                  "title": "Providing expandable bullets"
+                  "title": "拡張的なビュレットを提供する"
                 },
                 {
                   "id": "TECH:future14",
-                  "title": "Show/hide bullet points"
+                  "title": "ビュレットポイントを見せる又は隠す"
                 },
                 {
                   "id": "TECH:future15",
-                  "title": "Putting an em-space or two spaces after sentences"
+                  "title": "文の後はemスペース又は2スペースをあてる"
                 }
               ]},
               {"failure": [
@@ -2703,14 +2703,14 @@
               ]},
               {"advisory": [{"situations": [
                 {
-                  "title": "General Techniques for Non-Decorative Content",
+                  "title": "非装飾コンテンツに関する一般的な達成方法",
                   "techniques": [{
                     "id": "TECH:future1",
-                    "title": "Using server-side scripts to resize images of text"
+                    "title": "画像化された文字の大きさを変えるサーバーサイドのスクリプトを使う"
                   }]
                 },
                 {
-                  "title": "CSS Techniques",
+                  "title": "CSS による達成方法",
                   "techniques": [
                     {
                       "id": "TECH:C12",
@@ -2734,7 +2734,7 @@
                     },
                     {
                       "id": "TECH:future6",
-                      "title": "Avoid applying text styling to text characters within a word"
+                      "title": "1文字以内でデザインされるテキスト文字を避ける"
                     }
                   ]
                 }
@@ -2784,7 +2784,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Ensuring keyboard control",
+                  "title": "キーボードで操作できることを保証する",
                   "using": [
                     {
                       "id": "TECH:H91",
@@ -2857,7 +2857,7 @@
                 {"and": [
                   {
                     "id": "TECH:future1",
-                    "title": "Using XHTML role, state, and value attributes if repurposing static elements as interactive user interface components"
+                    "title": "インタラクティブなユーザインタフェース・コンポーネントとして静的な要素に再度目的を持たせる場合、XHTMLの役割、状態、及び値の属性を使用する"
                   },
                   {
                     "id": "TECH:SCR29",
@@ -2866,23 +2866,23 @@
                 ]},
                 {
                   "id": "TECH:future2",
-                  "title": "Providing keyboard shortcuts to important links and form controls"
+                  "title": "重要なリンク及びフォームのコントロールへのキーボード・ショートカットを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using unique letter combinations to begin each item of a list"
+                  "title": "一覧表の各項目を始めるために固有の文字の組合せを使用する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Choosing the most abstract event handler (Scripting)"
+                  "title": "もっとも抽象的なイベント・ハンドラを選択する (Scripting)"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using the onactivate event (Scripting)"
+                  "title": "OnActivateイベントを使用する (Scripting)"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Avoiding use of common user-agent keyboard commands for other purposes"
+                  "title": "他の目的で、一般的なユーザエージェントのキーボード・コマンドの使用を避ける"
                 }
               ]},
               {"failure": [
@@ -2938,7 +2938,7 @@
             "techniques": [{"sufficient":[
               {
                 "id": "TECH:text1",
-                "title": "No additional techniques exist for this Success Criterion. Follow techniques for <a href='#keyboard-operation-keyboard-operable'>Success Criterion 2.1.1</a>. If that is not possible because there is a requirement for path-dependent input, then it is not possible to meet this Level AAA Success Criterion."
+                "title": "この達成基準には、特に追加された達成方法があるわけではない。<a href='#keyboard-operation-keyboard-operable'>達成基準 2.1.1 の達成方法</a>を参照のこと。アナログで時間の経過に依存した入力があるためにその達成方法が不可能な場合は、このレベル AAA の達成基準に適合することはできない。"
               }
             ]}]
           }
@@ -2996,7 +2996,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If there are session time limits:",
+                  "title": "状況 A：セッションの制限時間がある場合：",
                   "techniques": [
                     {
                       "id": "TECH:G133",
@@ -3009,7 +3009,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If a time limit is controlled by a script on the page:",
+                  "title": "状況 B：制限時間がページ上のスクリプトで制御されている場合：",
                   "techniques": [
                     {
                       "id": "TECH:G198",
@@ -3044,7 +3044,7 @@
                   ]
                 },
                 {
-                  "title": "Situation C: If there are time limits on reading:",
+                  "title": "状況 C：コンテンツを読むのに制限時間がある場合：",
                   "techniques": [
                     {
                       "id": "TECH:G4",
@@ -3060,7 +3060,7 @@
                     },
                     {
                       "id": "TECH:SCR36",
-                      "title": " 静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する"
+                      "title": "静的なウィンドウ又はエリアにある、動きのあるテキスト、スクロールするテキスト、又は自動更新されるテキストを利用者が表示できるメカニズムを提供する"
                     }
                   ]
                 }
@@ -3068,11 +3068,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using a script to poll the server and notify a user if a time limit is present (Scripting)"
+                  "title": "制限時間がある場合、サーバーに問いかけるためにスクリプトを使用し、利用者に通知する (Scripting)"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using sounds to focus user's attention"
+                  "title": "利用者の注意を集中させるために音を使用する"
                 }
               ]},
               {"failure": [
@@ -3190,11 +3190,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing a mechanism to stop all content that blinks within a Web page"
+                  "title": "ウェブページ内で点滅するすべてのコンテンツを止めるメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing the user with a means to stop moving content even if it stops automatically within 5 seconds"
+                  "title": "5秒以内に自動的に止まるとしても、利用者が動きのあるコンテンツを止めるための手段を提供する"
                 }
               ]},
               {"failure": [
@@ -3274,7 +3274,7 @@
             "techniques": [
               {"sufficient": [{
                 "id": "TECH:future1",
-                "title": "Providing options to continue without loss of data",
+                "title": "データを損うことなく継続することができる選択肢を提供する",
                 "using": [
                   {
                     "id": "TECH:G105",
@@ -3301,7 +3301,7 @@
         "title": "発作を引き起こすようなコンテンツを設計しないこと。",
         "techniques": [{"advisory": [{
           "id": "TECH:future1",
-          "title": "Ensuring that content does not violate spatial pattern thresholds"
+          "title": "コンテンツは空間分布の閾値を超えないように注意する"
         }]}],
         "successcriteria": [
           {
@@ -3333,35 +3333,35 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Reducing contrast for any flashing content"
+                  "title": "閃光を放つあらゆるコンテンツに対してコントラストを下げる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Avoiding fully saturated reds for any flashing content"
+                  "title": "閃光を放つあらゆるコンテンツに対して赤色閃光閾値を完全に避ける"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Reducing the number of flashes even if they do not violate thresholds"
+                  "title": "閾値を超えていなかったとしても、閃光の数を減少させる"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing a mechanism to suppress any flashing content before it begins"
+                  "title": "閃光を放ち始める前に、閃光を放つあらゆるコンテンツを抑制するメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Slowing down live material to avoid rapid flashes (as in flashbulbs)"
+                  "title": "（フラッシュバルブのような）素早い閃光を避けるためにライブの素材は速度を落とす"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Freezing the image momentarily if 3 flashes within one second are detected"
+                  "title": "1秒間に3回の閃光が検出される場合、一時的に画像を静止させる"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Dropping the contrast ratio if 3 flashes within one second are detected"
+                  "title": "1秒間に3回の閃光が検出される場合、コントラスト比を落とす"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Allowing users to set a custom flash rate limit"
+                  "title": "利用者が閃光の速度制限を任意に設定できるようにする"
                 }
               ]}
             ]
@@ -3380,27 +3380,27 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Reducing contrast for any flashing content"
+                  "title": "閃光を放つあらゆるコンテンツに対してコントラストを下げる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Avoiding fully saturated reds for any flashing content"
+                  "title": "閃光を放つあらゆるコンテンツに対して赤色閃光閾値を完全に避ける"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Reducing the number of flashes even if they don't violate thresholds"
+                  "title": "閾値を超えていなかったとしても、閃光の数を減少させる"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Slowing down live material to avoid rapid flashes (as in flashbulbs)"
+                  "title": "（フラッシュバルブのような）素早い閃光を避けるためにライブの素材は速度を落とす"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Freezing the image momentarily if 3 flashes within one second are detected"
+                  "title": "1秒間に3回の閃光が検出される場合、一時的に画像を静止させる"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Dropping the contrast ratio if 3 flashes within one second are detected"
+                  "title": "1秒間に3回の閃光が検出される場合、コントラスト比を落とす"
                 }
               ]}
             ]
@@ -3415,19 +3415,19 @@
         "techniques": [{"advisory": [
           {
             "id": "TECH:future1",
-            "title": "Limiting the number of links per page"
+            "title": "1ページあたりのリンクの数を限定する"
           },
           {
             "id": "TECH:future2",
-            "title": "Providing mechanisms to navigate to different sections of the content of a Web page"
+            "title": "ウェブページのコンテンツの異なるセクションにナビゲートするメカニズムを提供する"
           },
           {
             "id": "TECH:future3",
-            "title": "Making links visually distinct"
+            "title": "視覚的に異なるリンクを用いる"
           },
           {
             "id": "TECH:future4",
-            "title": "Highlighting search terms"
+            "title": "検索ワードをハイライト表示する"
           }
         ]}],
         "successcriteria": [
@@ -3441,7 +3441,7 @@
               {"sufficient": [
                 {
                   "id": "TECH:future1",
-                  "title": "Creating links to skip blocks of repeated material",
+                  "title": "繰り返されるブロックをスキップするリンクを作成する",
                   "using": [
                     {
                       "id": "TECH:G1",
@@ -3463,7 +3463,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Grouping blocks of repeated material in a way that can be skipped",
+                  "title": "スキップ可能な方法で繰り返されるブロックをグループ化する",
                   "using": [
                     {
                       "id": "TECH:ARIA11",
@@ -3501,19 +3501,19 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing keyboard access to important links and form controls"
+                  "title": "重要なリンク及びフォーム制御へのキーボードアクセスを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing skip links to enhance page navigation"
+                  "title": "ページナビゲーションに拡張したスキップリンクを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing access keys"
+                  "title": "アクセスキーを提供する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using accessibility supported technologies which allow structured navigation by user agents and assistive technologies"
+                  "title": "ユーザエージェント及び支援技術による構造化されたナビゲーションを与えるアクセシビリティサポート技術を使う"
                 },
                 {
                   "id": "TECH:C6",
@@ -3550,19 +3550,19 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Identifying the subject of the Web page"
+                  "title": "ウェブページの主題を特定する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing a meaningful name for identifying frames"
+                  "title": "フレームを特定するため意味のある名前を提供する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using unique titles for Web pages"
+                  "title": "ウェブページに一意なタイトルを使う"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Providing a descriptive top-level page heading"
+                  "title": "説明的な内容を説明したトップレベルページの見出しを提供する"
                 }
               ]},
               {"failure": [{
@@ -3585,7 +3585,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Giving focus to elements in an order that follows sequences and relationships within the content",
+                  "title": "コンテンツ内の順序及び関係性に従った順序でフォーカスを要素に与える",
                   "using": [
                     {
                       "id": "TECH:H4",
@@ -3611,7 +3611,7 @@
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Changing a Web page dynamically",
+                  "title": "ウェブページを動的に変化させる",
                   "using": [
                     {
                       "id": "TECH:SCR26",
@@ -3631,11 +3631,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing a highly visible highlighting mechanism for links or controls when they receive keyboard focus"
+                  "title": "リンク又はコントロールがキーボードのフォーカスを受けるとき、可視的なメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Creating alternative presentation orders"
+                  "title": "代替となるプレゼンテーション順序を作り出す"
                 }
               ]},
               {"failure": [
@@ -3676,7 +3676,7 @@
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Allowing the user to choose short or long link text",
+                  "title": "利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする",
                   "using": [
                     {
                       "id": "TECH:G189",
@@ -3698,7 +3698,7 @@
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Providing a supplemental description of the purpose of a link",
+                  "title": "リンクの目的の説明を補足する",
                   "using": [
                     {
                       "id": "TECH:H33",
@@ -3712,7 +3712,7 @@
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Identifying the purpose of a link using link text combined with programmatically determined link context",
+                  "title": "プログラムで判断されるリンクの文脈と一緒にリンクの目的を特定する",
                   "using": [
                     {
                       "id": "TECH:ARIA7",
@@ -3747,7 +3747,7 @@
                   },
                   {
                     "id": "TECH:text1",
-                    "title": "Semantically indicating links",
+                    "title": "セマンティックにリンクを示す",
                     "using": [
                       {
                         "id": "TECH:PDF11",
@@ -3800,7 +3800,7 @@
             "techniques": [
               {"sufficient": [{
                 "id": "TECH:future1",
-                "title": "Using two or more of the following techniques:",
+                "title": "次の達成方法のうち2つ以上を用いる：",
                 "using": [
                   {
                     "id": "TECH:G125",
@@ -3839,7 +3839,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Including information about presentation modes in tables of contents and concept maps"
+                  "title": "コンテンツ及びコンセプトマップの表にプレゼンテーションモードについての情報を含める"
                 }
               ]}
             ]
@@ -3864,11 +3864,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using unique section headings in a Web Page"
+                  "title": "ウェブページに一意なセクション見出しを用いる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Starting section headings with unique information"
+                  "title": "一意な情報からセクション見出しをはじめる"
                 }
               ]}
             ],
@@ -3918,11 +3918,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Highlighting a link or control when the mouse hovers over it"
+                  "title": "リンクもしくはコントロールのそばにマウスが来たとき強調する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a highly visible highlighting mechanism for links or controls when they receive keyboard focus"
+                  "title": "リンク又はコントロールがキーボードのフォーカスを受けるとき、可視的なメカニズムを提供する"
                 }
               ]},
               {"failure": [
@@ -3977,19 +3977,19 @@
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing a link to the home page or main page"
+                  "title": "HOMEページもしくは主要なページへのリンクを提供する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing an easy-to-read version of information about the organization of a set of Web pages"
+                  "title": "ウェブページの集合の編成について読みやすいバージョンの情報を提供する"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Providing a sign language version of information about the organization of a set of Web pages"
+                  "title": "ウェブページの集合の編成について手話バージョンの情報を提供する"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Providing an easy-to-read summary at the beginning of each section of content"
+                  "title": "コンテンツの各セクションの最初に読みやすい概要を提供する"
                 }
               ]}
             ]
@@ -4024,7 +4024,7 @@
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Allowing the user to choose short or long link text",
+                  "title": "利用者が簡潔なリンクテキスト又は長いリンクテキストを選べるようにする",
                   "using": [
                     {
                       "id": "TECH:G189",
@@ -4042,7 +4042,7 @@
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Providing a supplemental description of the purpose of a link",
+                  "title": "リンクの目的の説明を補足する",
                   "using": [{
                     "id": "TECH:C7",
                     "title": "リンクテキストの一部を非表示にするために、CSS を使用する"
@@ -4050,7 +4050,7 @@
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Semantically indicating links",
+                  "title": "セマンティックにリンクを示す",
                   "using": [
                     {
                       "id": "TECH:PDF11",
@@ -4125,11 +4125,11 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using the 'live' property to mark live regions (ARIA)"
+                  "title": "ライブリージョンを特定する'live'プロパティを使う (ARIA)"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing mechanisms to navigate to different sections of the content of a Web page"
+                  "title": "ウェブページのコンテンツの異なるセクションにナビゲートするメカニズムを提供する"
                 }
               ]}
             ]
@@ -4152,67 +4152,67 @@
         "techniques": [{"advisory": [
           {
             "id": "TECH:future1",
-            "title": "Setting expectations about content in the page from uncontrolled sources"
+            "title": "ページ中のコンテンツのうち、制作者が制御できないソースに基づくものについて、そのコンテンツに関する情報を提供する"
           },
           {
             "id": "TECH:future2",
-            "title": "Providing sign language interpretation for all content"
+            "title": "すべてのコンテンツは、手話による通訳を提供する"
           },
           {
             "id": "TECH:future3",
-            "title": "Using the clearest and simplest language appropriate for the content"
+            "title": "そのコンテンツに対して適切な、最も明解で単純な表現を用いる"
           },
           {
             "id": "TECH:future4",
-            "title": "Avoiding centrally aligned text"
+            "title": "中心揃えの文字を使わない"
           },
           {
             "id": "TECH:future5",
-            "title": "Avoiding text that is fully justified (to both left and right margins) in a way that causes poor spacing between words or characters"
+            "title": "単語間やも文字間の空白に影響を与える、テキストの均等割り付けを行わない"
           },
           {
             "id": "TECH:future6",
-            "title": "Using left-justified text for languages that are written left to right and right-justified text for languages that are written right-to-left"
+            "title": "左から右へ書き綴る言語は左寄せを使い、右から左へ書き綴る言語は右寄せを用いる"
           },
           {
             "id": "TECH:future7",
-            "title": "Limiting text column width"
+            "title": "テキストのコラム幅を制限する"
           },
           {
             "id": "TECH:future8",
-            "title": "Avoiding chunks of italic text"
+            "title": "イタリックテキストをたくさんを使わない"
           },
           {
             "id": "TECH:future9",
-            "title": "Avoiding overuse of different styles on individual pages and in sites"
+            "title": "個々のページやサイト内で異なるスタイルを乱用しない"
           },
           {
             "id": "TECH:future10",
-            "title": "Making links visually distinct"
+            "title": "視覚的に異なるリンクを用いる"
           },
           {
             "id": "TECH:future11",
-            "title": "Using images, illustrations, video, audio, or symbols to clarify meaning"
+            "title": "画像、イラスト、動画、音声、シンボルなどを用いてコンテンツの意味を明確にする"
           },
           {
             "id": "TECH:future12",
-            "title": "Providing practical examples to clarify content"
+            "title": "現実的な例を示して、コンテンツの意味を明確にする"
           },
           {
             "id": "TECH:future13",
-            "title": "Using a light pastel background rather than a white background behind black text"
+            "title": "黒のテキストに白の背景色を用いるのではなく、明るいパステル・カラーを背景色に用いる"
           },
           {
             "id": "TECH:future14",
-            "title": "Avoiding the use of unique interface controls unnecessarily"
+            "title": "必要性がない特殊なインタフェース・コントロールを用いない"
           },
           {
             "id": "TECH:future15",
-            "title": "Using upper and lower case according to the spelling rules of the text language"
+            "title": "その原語におけるスペリングの規則に従って、適切な形で大文字と小文字を使い分ける"
           },
           {
             "id": "TECH:future16",
-            "title": "Avoiding unusual foreign words"
+            "title": "一般的ではない外来語の使用を避ける"
           },
           {
             "id": "TECH:future17",
@@ -4220,19 +4220,19 @@
           },
           {
             "id": "TECH:future18",
-            "title": "Making any reference to a location in a Web page into a link to that location"
+            "title": "ウェブページ上の特定の場所を参照している場合、その場所へのリンクを提供する"
           },
           {
             "id": "TECH:future19",
-            "title": "Making references to a heading or title include the full text of the title"
+            "title": "見出しやタイトルを参照する場合、完全なタイトルを含むようにする"
           },
           {
             "id": "TECH:future20",
-            "title": "Providing easy-to-read versions of basic information about a set of Web pages, including information about how to contact the Webmaster"
+            "title": "管理者への連絡方法を含む、ウェブページ一式に関する基本的な情報について、容易に読めるバージョンを提供する"
           },
           {
             "id": "TECH:future21",
-            "title": "Providing a sign language version of basic information about a set of Web pages, including information about how to contact the Webmaster"
+            "title": "管理者への連絡方法を含む、ウェブページ一式に関する基本的な情報について、手話バージョンを提供する"
           }
         ]}],
         "successcriteria": [
@@ -4268,7 +4268,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using http or the Content-Language meta tag for metadata"
+                  "title": "http 又は Content-Language メタ・タグを用いてメタデータを指定する"
                 }
               ]}
             ]
@@ -4305,15 +4305,15 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Making text that is not in the default human language of the Web page visually distinct"
+                  "title": "そのウェブページのデフォルトの自然言語とは異なる言語で記述されているテキストを視覚的に区別できるようにする"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Giving the names of any languages used in foreign passages or phrases"
+                  "title": "外国語で記述された節や語句で用いられているすべての原語の名前を表示する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing language markup on proper names to facilitate correct pronunciation by screen readers"
+                  "title": "固有名詞の原語をマークアップして、スクリーンリーダが正しく発音できるようにする"
                 }
               ]}
             ]
@@ -4327,7 +4327,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the word or phrase has a unique meaning within the Web page:",
+                  "title": "状況 A： 単語又は語句にそのウェブページ特有の意味がある場合：",
                   "techniques": [
                     {
                       "id": "TECH:G101",
@@ -4388,7 +4388,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If the word or phrase means different things within the same Web page:",
+                  "title": "状況 B： 単語又は語句の意味が、同じウェブページ内で異なる場合：",
                   "techniques": [{
                     "id": "TECH:G101",
                     "title": "一般的ではない、又は限定された用法で用いられている単語や語句の定義を提供する",
@@ -4422,31 +4422,31 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using markup and visual formatting to help users recognize words that have special meaning"
+                  "title": "特殊な意味を持つ言葉を利用者が認識できるようなマークアップや視覚的フォーマットを行う"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a voice-enabled dictionary search so that users who have difficulty typing or spelling can speak the word whose definition they need"
+                  "title": "音声で検索できる辞書を提供し、キーボードの操作や単語を綴ることが難しい利用者が発声することで言葉の意味を検索できるようにする"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing a sign language dictionary to help users who are deaf find the necessary definitions"
+                  "title": "手話による辞書を提供し、聴覚障害者による言葉の意味の検索を支援する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing a mechanism for finding definitions for all words in text content"
+                  "title": "テキストコンテンツ中のすべての言葉の定義を検索できるようなメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Providing a mechanism to determine the meaning of each word or phrase in text content"
+                  "title": "テキストコンテンツ中のすべての単語や語句について、その意味を判断するためのメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Avoiding unusual foreign words"
+                  "title": "一般的ではない外来語の使用を避ける"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Using a series of dictionaries in cascading fashion to provide meanings"
+                  "title": "一連の辞書をカスケード式に表示して意味を提供する"
                 }
               ]}
             ]
@@ -4460,7 +4460,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the abbreviation has only one meaning within the Web page:",
+                  "title": "状況 A： 略語がそのウェブページ内で一つの意味しか持たない場合：",
                   "techniques": [
                     {
                       "id": "TECH:G102",
@@ -4517,7 +4517,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If the abbreviation means different things within the same Web page:",
+                  "title": "状況 B： 略語が同じウェブページで異なるものを意味している場合：",
                   "techniques": [{
                     "id": "TECH:G102",
                     "title": "略語の元の語又は説明を提供する",
@@ -4541,19 +4541,19 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Using unique abbreviations in a Web page"
+                  "title": "そのウェブページ上で一意な略語を用いる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using visual formatting to help users recognize abbreviations"
+                  "title": "利用者が略語を認識しやすいような視覚的フォーマットを用いる"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing access to a talking dictionary to support users who might have difficulty decoding written definitions"
+                  "title": "音声読み上げ機能がある辞書の利用を可能にし、表示された文字情報を復号化することが困難な利用者を支援する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing a voice-enabled dictionary search so that users who have difficulty typing or spelling can speak the word whose definition they need"
+                  "title": "音声で検索できる辞書を提供し、キーボードの操作や単語を綴ることが難しい利用者が発声することで言葉の意味を検索できるようにする"
                 }
               ]}
             ]
@@ -4591,79 +4591,79 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing text for navigational and landing pages that requires reading ability that is less advanced than the lower secondary education level"
+                  "title": "前期中等教育レベル以上の読解力を必要としないテキストを用いて、ナビゲーション用のページとランディングページを提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing text for interior pages that requires reading ability at the lower secondary education level"
+                  "title": "前期中等教育レベル以上の読解力を必要としないテキストを用いて、サイト内のページを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Including content summaries in metadata"
+                  "title": "コンテンツの概要をメタデータの一部とし提供する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Using the clearest and simplest language appropriate for the content"
+                  "title": "そのコンテンツに対して適切な、最も明解で単純な表現を用いる"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Using RDF to associate supplements with primary content"
+                  "title": "RDFを用いて、補足的コンテンツと主たるコンテンツに関連づける"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Providing a clear representational image on the site's home page"
+                  "title": "サイトのホームページにそのサイトを表す分かりやすい画像を掲載する"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Clearly marking, by use of text or icon, content which has been optimized for easy reading"
+                  "title": "読みやすいように最適化されたコンテンツであることが分かるように、テキストやアイコンを用いて明示する"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Using sentences that contain no redundant words, that is, words that do not change the meaning of the sentence"
+                  "title": "冗長な単語の使い方、すなわち文の意味を変えない異なる単語を用いないで文を構成する"
                 },
                 {
                   "id": "TECH:future9",
-                  "title": "Using sentences that contain no more than two conjunctions"
+                  "title": "二つより多い接続詞を含む文を使わない"
                 },
                 {
                   "id": "TECH:future10",
-                  "title": "Using sentences that are no longer than the typical accepted length for secondary education (Note: In English that is 25 words)"
+                  "title": "中等教育レベルで一般的に容認されている長さを超えない文を用いる（注記: 英語では 25 ワードである）"
                 },
                 {
                   "id": "TECH:future11",
-                  "title": "Using sentences that do not contain complex words or phrases that could be replaced with more commonly used words without changing the meaning of the sentence"
+                  "title": "複雑な単語又は語句で、より一般的な言葉で置き換えても文の意味が変わらない場合、複雑な単語や語句を含まない文を用いる"
                 },
                 {
                   "id": "TECH:future12",
-                  "title": "Providing summaries for different sections of text"
+                  "title": "テキストの複数の章や節の概要を提供する"
                 },
                 {
                   "id": "TECH:future13",
-                  "title": "Using metadata to associate alternatives at different reading levels."
+                  "title": "メタデータを用いて、異なる読解力を想定して作られた代替コンテンツを関連づける"
                 },
                 {
                   "id": "TECH:future14",
-                  "title": "Using the Dublin Core accessibility element to associate text content with text, graphical, or spoken supplements"
+                  "title": "ダブリン・コアのアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける"
                 },
                 {
                   "id": "TECH:future15",
-                  "title": "Using the ISO AfA accessibility element to associate text content with text, graphical, or spoken supplements"
+                  "title": "ISO AFA のアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける"
                 },
                 {
                   "id": "TECH:future16",
-                  "title": "Using the IMS accessibility element to associate text content with text, graphical, or spoken supplements"
+                  "title": "IMS のアクセシビリティ要素を用いて、テキストコンテンツとテキスト、グラフィック、音声版の補足的コンテンツを関連づける"
                 },
                 {
                   "id": "TECH:future17",
-                  "title": "Making metadata viewable by humans",
+                  "title": "メタデータを利用者に見えるようにする",
                   "using": [{
                     "id": "TECH:future1",
-                    "title": "EXAMPLE: Providing, in metadata, URI(s) that point to a pre-primary-reading-level and a primary-reading-level text transcript of a new scientific discovery advanced-reading-level article."
+                    "title": "事例：新しい科学的発見に関する高等レベルの記事の初頭レベル以下及び初頭レベルの版へのURIをメタデータとして提供する"
                   }]
                 },
                 {
                   "id": "TECH:future18",
-                  "title": "Providing progressive complexity for site and page content"
+                  "title": "サイトとページのコンテンツに進展する複雑性を与える"
                 }
               ]}
             ]
@@ -4700,15 +4700,15 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Providing pronunciations in a sound file, so that users can listen to the pronunciations of the word"
+                  "title": "利用者が単語の発音を聴くことができるように、発音を音声ファイルで提供する"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Providing a mechanism for finding pronunciations for all foreign words in text content"
+                  "title": "テキスト・コンテンツ中で用いられているすべての外国語の発音の発音を確認するメカニズムを提供する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing a mechanism to determine the pronunciations of each word or phrase in text content"
+                  "title": "テキスト・コンテンツ中のすべての単語又は語句の発音を確認するメカニズムを提供する"
                 }
               ]}
             ]
@@ -4740,7 +4740,7 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Not causing persistent changes of state or value when a component receives focus, or providing an alternate means to reset any changes"
+                  "title": "コンポーネントがフォーカスを受け取ったときに持続的な状態又は値の変更を発生させない、又はあらゆる変更をリセットするための代替手段を提供する"
                 },
                 {
                   "id": "TECH:G200",
@@ -4845,11 +4845,11 @@
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Using templates to ensure consistency across multiple Web pages"
+                  "title": "複数のウェブページの間で一貫性を保つためにテンプレートを利用する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Creating layout, positioning, layering, and alignment"
+                  "title": "レイアウト、位置、階層、配置を作る"
                 }
               ]},
               {"failure": [{
@@ -4874,18 +4874,18 @@
                   },
                   {
                     "id": "TECH:text1",
-                    "title": "following the <a href='#text-equiv-all'>sufficient techniques for Success Criterion 1.1.1</a> and <a href='#ensure-compat-rsv'>sufficient techniques for Success Criterion 4.1.2</a> for providing labels, names, and text alternatives"
+                    "title": "<a href='#text-equiv-all'>達成基準1.1.1を満たすことのできる達成方法</a>かつ<a href='#ensure-compat-rsv'>達成基準4.1.2を満たすことのできる達成方法</a>に従ってラベル、識別名、代替テキストを提供する"
                   }
                 ]}
               ]},
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Ensuring that the text alternative conveys the function of the component and what will happen when the user activates it"
+                  "title": "コンポーネントの機能及びそのコンポーネントを利用者が実行したときに何が起こるかが確実に分かるような代替テキストを用いる"
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Using the same non-text content for a given function whenever possible"
+                  "title": "可能な限り、特定の機能を表す非テキストコンテンツは同じものにする"
                 }
               ]},
               {"failure": [{
@@ -4903,14 +4903,14 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If the Web page allows automatic updates:",
+                  "title": "状況 A： ウェブページが自動更新を行う場合：",
                   "techniques": [{
                     "id": "TECH:G76",
                     "title": "自動的に更新するのではなく、利用者がコンテンツの更新を要求するメカニズムを提供する"
                   }]
                 },
                 {
-                  "title": "Situation B: If automatic redirects are possible:",
+                  "title": "状況 B： 自動リダイレクトが可能な場合：",
                   "techniques": [
                     {
                       "id": "TECH:SVR1",
@@ -4927,10 +4927,10 @@
                   ]
                 },
                 {
-                  "title": "Situation C: If the Web page uses pop-up windows:",
+                  "title": "状況 C： ウェブページがポップアップウィンドウを用いる場合：",
                   "techniques": [{
                     "id": "TECH:future1",
-                    "title": "Including pop-up windows",
+                    "title": "ポップアップウィンドウを表示する",
                     "using": [
                       {
                         "id": "TECH:H83",
@@ -4944,7 +4944,7 @@
                   }]
                 },
                 {
-                  "title": "Situation D: If using an onchange event on a select element:",
+                  "title": "状況 D： select要素上でonchangeイベントを用いる場合：",
                   "techniques": [{
                     "id": "TECH:SCR19",
                     "title": "状況の変化を引き起こすことのないように、select 要素の onchange イベントを使用する"
@@ -4954,7 +4954,7 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Opening new windows by providing normal hyperlinks without the target attribute, because many user agents allow users to open links in another window or tab."
+                  "title": "新しいウィンドウを開く際、target属性を用いず一般的なハイパーリンクを提供する。これは、多くのユーザエージェントではリンクを別のウィンドウ又は別のタブで開く機能を提供しているためである。"
                 },
                 {
                   "id": "TECH:G200",
@@ -4998,7 +4998,7 @@
         "title": "利用者の間違いを防ぎ、修正を支援すること。",
         "techniques": [{"advisory": [{
           "id": "TECH:future1",
-          "title": "Hiding optional form fields"
+          "title": "追加のフォームフィールドを隠しておく"
         }]}],
         "successcriteria": [
           {
@@ -5010,7 +5010,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If a form contains fields for which information from the user is mandatory.",
+                  "title": "状況 A： フォームが利用者からの情報が必須である入力フィールドを含む場合",
                   "techniques": [
                     {
                       "id": "TECH:G83",
@@ -5035,7 +5035,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If information provided by the user is required to be in a specific data format or of certain values.",
+                  "title": "状況 B： 利用者によって提供される情報が、特別なデータフォーマットか特定の値であることが求められる場合",
                   "techniques": [
                     {
                       "id": "TECH:ARIA18",
@@ -5087,27 +5087,27 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Validating form submissions on the server"
+                  "title": "送信されたフォームが正しいかをサーバーで確認する"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Re-displaying a form with a summary of errors"
+                  "title": "エラーの要約とともにフォームを再度表示する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Providing error notification as the user enters information"
+                  "title": "利用者が情報を入力したときにエラーを通知する"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Including error notification information in the page title"
+                  "title": "ページタイトルにエラーを通知する情報を含める"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Highlighting or visually emphasizing errors where they occur"
+                  "title": "エラーが起きた場所をハイライトするか視覚的に強調する"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Supplementing text with non-text content when reporting errors"
+                  "title": "エラーを報告する際に、非テキストコンテンツにテキストを補足する"
                 },
                 {
                   "id": "TECH:G199",
@@ -5115,7 +5115,7 @@
                 },
                 {
                   "id": "TECH:future9",
-                  "title": "Using sounds to focus user's attention"
+                  "title": "利用者の注意を集中させるために音を使用する"
                 }
               ]}
             ]
@@ -5231,7 +5231,7 @@
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Providing linear form design and grouping similar items"
+                  "title": "線形なフォームのデザインを提供し、同様の項目をグループ化する"
                 }
               ]},
               {"failure": [{
@@ -5249,7 +5249,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If a mandatory field contains no information:",
+                  "title": "状況 A： 必須のフィールドに情報が入力されていない場合：",
                   "techniques": [
                     {
                       "id": "TECH:G83",
@@ -5270,7 +5270,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If information for a field is required to be in a specific data format:",
+                  "title": "状況 B： フィールドの情報に、特別のデータフォーマットが要求される場合：",
                   "techniques": [
                     {
                       "id": "TECH:ARIA18",
@@ -5303,7 +5303,7 @@
                   ]
                 },
                 {
-                  "title": "Situation C: Information provided by the user is required to be one of a limited set of values:",
+                  "title": "状況 C： 利用者の入力する情報は、複数の限定された値のうちの一つであることが要求される場合：",
                   "techniques": [
                     {
                       "id": "TECH:ARIA18",
@@ -5343,31 +5343,31 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Making error messages easy to understand and distinguishable from other text in the Web page"
+                  "title": "エラーメッセージを、ウェブページのその他のテキストと区別しやすくし、容易に理解できるようにする"
                 },
                 {
                   "id": "TECH:future3",
-                  "title": "Validating form submissions on the server"
+                  "title": "送信されたフォームが正しいかをサーバーで確認する"
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "When mandatory information has not been provided, including descriptions or examples of correct information in addition to identifying the field as mandatory"
+                  "title": "必須の情報が入力されない場合に、必須フィールドを識別するだけでなく、正しい情報の説明と事例を提供する"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Repeating and emphasizing suggestions for correcting each input error in the context of its form field"
+                  "title": "フォームフィールドと関連して、各入力エラーを訂正するための提案を繰り返し強調する"
                 },
                 {
                   "id": "TECH:future6",
-                  "title": "Providing a way for the user to skip from each item in a list of suggestions to its corresponding form field"
+                  "title": "提案するリストの各項目から、対応するフォームフィールドへスキップする方法を利用者に提供する"
                 },
                 {
                   "id": "TECH:future7",
-                  "title": "Providing additional contextual help for the form field requiring change"
+                  "title": "変更の必要のあるフォームフィールドに対して、文脈に沿った追加のヘルプを提供する"
                 },
                 {
                   "id": "TECH:future8",
-                  "title": "Accepting input data in a variety of formats"
+                  "title": "様々なフォーマットの入力データを受け付ける"
                 },
                 {
                   "id": "TECH:G199",
@@ -5375,37 +5375,37 @@
                 },
                 {"situations": [
                   {
-                    "title": "Techniques for providing suggestions to the user (Advisory)",
+                    "title": "利用者に提案を行う達成方法（参考）",
                     "techniques": [
                       {
                         "id": "TECH:future1",
-                        "title": "Providing a text description that contains information about the number of input errors, suggestions for corrections to each item, and instructions on how to proceed"
+                        "title": "入力エラーの数についての情報を含むテキストの説明、各項目を訂正するための提案、そして、どのように進めるべきかの指示を提供する"
                       },
                       {
                         "id": "TECH:future2",
-                        "title": "Providing a text description that contains suggestions for correction as the first item (or one of the first items) of content, or emphasizing this information in the content"
+                        "title": "コンテンツの最初の項目（あるいは最初の項目の一つ）を訂正するための提案を含むテキストの説明を提供する、又は、コンテンツの中でこの情報を強調する"
                       },
                       {
                         "id": "TECH:future3",
-                        "title": "Displaying errors and suggestions in the context of the original form (for example, re-displaying a form where input errors and suggestions for correction are highlighted and displayed in the context of the original form)"
+                        "title": "エラーを表示し、元のフォームの文脈に沿った提案をする（例えば、フォームのどこに入力エラーがあるかを再表示し、訂正のための提案がハイライトされ、元のフォームとの関連を表示する）"
                       }
                     ]
                   },
                   {
-                    "title": "HTML Techniques (Advisory)",
+                    "title": "HTMLの達成方法（参考）",
                     "techniques": [
                       {
                         "id": "TECH:future1",
-                        "title": "Providing \"correct examples\" for data and data formats as initial text in mandatory form fields"
+                        "title": "必須のフォームフィールドで最初のテキストとして、データとデータフォーマットについて「正しい事例」を提供する"
                       },
                       {
                         "id": "TECH:future2",
-                        "title": "Providing links to suggested correction text \"close to\" form fields, or providing the suggested correction text itself directly on the Web page \"next to\" form fields"
+                        "title": "正しいテキストを示唆するリンクをフォームフィールドの「近くで」提供するか、正しいテキストを示唆するテキスト自体をウェブページ上のフォームフィールドの「隣に」直接配置する"
                       }
                     ]
                   },
                   {
-                    "title": "Client-Side Scripting Techniques (Advisory)",
+                    "title": "クライアントサイドのスクリプトの達成方法（参考）",
                     "techniques": [
                       {
                         "id": "TECH:SCR18",
@@ -5417,7 +5417,7 @@
                       },
                       {
                         "id": "TECH:future3",
-                        "title": "Calling a function from the submit action of a form to perform client side validation"
+                        "title": "フォームの送信動作をきっかけにクライアントサイドのバリデーションの機能を呼び出す"
                       }
                     ]
                   }
@@ -5451,7 +5451,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If an application causes a legal transaction to occur, such as making a purchase or submitting an income tax return:",
+                  "title": "状況 A： アプリケーションで、購入又は所得税申告の提出のように、法的なトランザクションが発生する場合：",
                   "techniques": [
                     {
                       "id": "TECH:G164",
@@ -5468,7 +5468,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If an action causes information to be deleted:",
+                  "title": "状況 B： 利用者のアクションによって情報が削除される可能性がある場合：",
                   "techniques": [
                     {
                       "id": "TECH:G99",
@@ -5485,7 +5485,7 @@
                   ]
                 },
                 {
-                  "title": "Situation C: If the Web page includes a testing application:",
+                  "title": "状況 C： ウェブページに試験を実施するアプリケーションがある場合：",
                   "techniques": [
                     {
                       "id": "TECH:G98",
@@ -5501,7 +5501,7 @@
               {"advisory": [
                 {
                   "id": "TECH:future1",
-                  "title": "Informing the user what irreversible action is about to happen"
+                  "title": "どのような不可逆のアクションが起きそうになっているかを利用者に知らせる"
                 },
                 {
                   "id": "TECH:SCR18",
@@ -5513,11 +5513,11 @@
                 },
                 {
                   "id": "TECH:future4",
-                  "title": "Placing focus in the field containing the error"
+                  "title": "エラーを含むフィールドにフォーカスを置く"
                 },
                 {
                   "id": "TECH:future5",
-                  "title": "Avoiding use of the same words or letter combinations to begin each item of a drop-down list"
+                  "title": "プルダウンメニューの各項目の最初では、同じ用語や同じ文字の組み合わせの使用を避ける"
                 },
                 {
                   "id": "TECH:G199",
@@ -5535,7 +5535,7 @@
             "techniques": [
               {"sufficient": [{"situations": [
                 {
-                  "title": "Situation A: If a form requires text input:",
+                  "title": "状況 A： フォームがテキスト入力を求める場合：",
                   "techniques": [
                     {
                       "id": "TECH:G71",
@@ -5556,7 +5556,7 @@
                   ]
                 },
                 {
-                  "title": "Situation B: If a form requires text input in an expected data format:",
+                  "title": "状況 B： フォームが所定のデータフォーマットでのテキスト入力を求める場合：",
                   "techniques": [
                     {
                       "id": "TECH:G89",
@@ -5576,7 +5576,7 @@
                 },
                 {
                   "id": "TECH:future2",
-                  "title": "Checking byte of character and auto-converting to expected byte for text input if applicable"
+                  "title": "文字のバイト数をチェックし、適切なバイト数へと自動変換する"
                 }
               ]}
             ]
@@ -5607,7 +5607,7 @@
             "techniques": [{"sufficient": [
               {
                 "id": "TECH:text1",
-                "title": "Following the <a href='http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>sufficient techniques for Success Criterion 3.3.4</a> for all forms that require the user to submit information."
+                "title": "利用者に情報の送信を要求するすべてのフォームにおいて、<a href='http://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-reversible.html#minimize-error-reversible-techniques-head'>達成基準 3.3.4 を満たすことのできる達成方法</a>に従うこと。"
                }
             ]}]
           }
@@ -5618,7 +5618,7 @@
   {
     "id": "WCAG2:robust",
     "num": "4",
-    "handle": "堅牢 (robust)",
+    "handle": "堅牢",
     "title": "コンテンツは、支援技術を含む様々なユーザエージェントが確実に解釈できるように十分に堅牢 (robust) でなければならない。",
     "guidelines": [{
       "id": "WCAG2:ensure-compat",
@@ -5628,11 +5628,11 @@
       "techniques": [{"advisory": [
         {
           "id": "TECH:future1",
-          "title": "Avoiding deprecated features of W3C technologies"
+          "title": "W3Cが策定した技術仕様の中で非推奨とされている機能の使用を避ける"
         },
         {
           "id": "TECH:future2",
-          "title": "Not displaying content that relies on technologies that are not accessibility-supported when the technology is turned off or not supported."
+          "title": "その技術がオフになっている、又はサポートされていないとき、アクセシビリティ・サポーテッドではない技術に依存したコンテンツを表示しない。"
         }
       ]}],
       "successcriteria": [
@@ -5663,7 +5663,7 @@
               },
               {
                 "id": "TECH:future4",
-                "title": "Ensuring that Web pages can be parsed",
+                "title": "ウェブページが正しく解析できることを確認する",
                 "using": [
                   {"and": [
                     {
@@ -5716,7 +5716,7 @@
           "techniques": [
             {"sufficient": [{"situations": [
               {
-                "title": "Situation A: If using a standard user interface component in a markup language (e.g., HTML):",
+                "title": "状況 A: マークアップ言語（例えば HTML）で標準的なユーザインタフェース コンポーネントを使用している場合:",
                 "techniques": [
                   {
                     "id": "TECH:ARIA14",
@@ -5755,10 +5755,10 @@
                 ]
               },
               {
-                "title": "Situation B: If using script or code to re-purpose a standard user interface component in a markup language:",
+                "title": "状況 B：スクリプト又はコードを用いて、マークアップ言語の標準的なユーザインタフェース コンポーネント再定義する場合：",
                 "techniques": [{
                   "id": "TECH:future1",
-                  "title": "Exposing the names and roles, allowing user-settable properties to be directly set, and providing notification of changes",
+                  "title": "名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知する",
                   "using": [{
                     "id": "TECH:ARIA16",
                     "title": "ユーザインターフェース コントロールの名前（name）を提供するために、aria-labelledby を使用する"
@@ -5766,7 +5766,7 @@
                 }]
               },
               {
-                "title": "Situation C: If using a standard user interface component in a programming technology:",
+                "title": "状況 C：プログラミング技術で標準的なユーザインタフェース コンポーネントを用いる場合：",
                 "techniques": [{
                   "id": "TECH:G135",
                   "title": "名前及び役割をユーザエージェントに提供し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するために、ウェブコンテンツ技術のアクセシビリティ API を使用する。",
@@ -5803,7 +5803,7 @@
                 }]
               },
               {
-                "title": "Situation D: If creating your own user interface component in a programming language:",
+                "title": "状況 D：プログラミング言語で独自のインタフェース・コンポーネントを作成する場合：",
                 "techniques": [{
                   "id": "TECH:G10",
                   "title": "識別名及び役割を取得し、利用者が設定可能なプロパティを直接設定可能にし、変化を通知するためにユーザエージェントが動作する、プラットフォームのアクセシビリティ API 機能をサポートするウェブコンテンツ技術を用いて、コンポーネントを作成す",
@@ -5842,7 +5842,7 @@
             ]}]},
             {"advisory": [{
               "id": "TECH:future1",
-              "title": "Providing labels for all form controls that do not have implicit labels"
+              "title": "暗黙のラベルを持たないすべてのフォーム コントロールにラベルを付加する"
             }]},
             {"failure": [
               {
