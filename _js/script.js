@@ -142,7 +142,7 @@ jQuery(document).ready(function($) {
         $('[data-historicalid="' + gotohash + '"]').parents('.collapse').collapse('show');
         scrollto($('[data-historicalid="' + gotohash + '"]'));
       } else {
-        scrollto(gotohash);
+        scrollto($(gotohash));
       }
     }
   }
@@ -228,7 +228,7 @@ jQuery(document).ready(function($) {
     });
     if($('.sc-wrapper:not(.current)').length > 0) {
       $('#hiddensc').empty();
-      $('<div class="panel-heading"><h2 style="margin: 0;">Filtered Success Criteria <button class="clearall btn btn-info btn-sm" hidden="" style="display: inline-block;"><span class="glyphicon glyphicon-refresh"></span> Clear filters</button></h2></div><div class="panel-body"><p><strong>The following success critera are not shown based on the selected tags and/or filters:</strong></p></div>').appendTo('#hiddensc');
+      $('<div class="panel-heading"><h2 style="margin: 0;">Filtered-Out Success Criteria <button class="clearall btn btn-info btn-sm" hidden="" style="display: inline-block;"><span class="glyphicon glyphicon-refresh"></span> Clear filters</button></h2></div><div class="panel-body"><p><strong>The following success critera are not shown based on the selected tags and/or filters:</strong></p></div>').appendTo('#hiddensc');
       $('<div class="panel-body hiddensc-inner">').appendTo('#hiddensc');
       var hiddenscul = $('<ul>');
       $('.sc-wrapper:not(.current) h4'). each(function(index, el) {
@@ -346,8 +346,12 @@ jQuery(document).ready(function($) {
   function scrollto(target) {
     var location = window.history.location || window.location,
         uri = new URI(location),
-        scrollAnimation = parseInt(localStorage.getItem("wai.scrollAnimation"));
-    var scrollpos = target.offset().top - $('.navrow').outerHeight() + 1;
+        scrollAnimation = parseInt(localStorage.getItem("wai.scrollAnimation")),
+        scrolldiff = 60;
+        if ($('.navrow').outerHeight() > 0) {
+          scrolldiff = $('.navrow').outerHeight() + 5;
+        }
+    var scrollpos = target.offset().top - scrolldiff;
     $('body, html').animate({
         scrollTop: scrollpos
     }, scrollAnimation, 'linear');
@@ -604,7 +608,7 @@ jQuery(document).ready(function($) {
 
     $('body').scrollspy({
       target: '.overview.spy-active',
-      offset: 45
+      offset: 60
     });
 
     // Use WOFF2 if supported
