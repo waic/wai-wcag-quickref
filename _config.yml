@@ -9,7 +9,7 @@ github_username:  yatil
 status: draft
 version: "2.1.1"
 
-techniqueurl: http://www.w3.org/TR/WCAG20-TECHS/
+techniqueurl: http://waic.jp/docs/WCAG-TECHS/
 
 port: 4099
 
