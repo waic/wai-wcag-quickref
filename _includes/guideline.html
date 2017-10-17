@@ -3,7 +3,7 @@
 {% assign g_id = guideline.id | replace:'WCAG2:','' %}
 <div class="guideline panel panel-primary panel-borderless">
 	<div class="panel-heading">
-		<h3 id="{{g_id}}">Guideline <strong>{{ guideline.num }}</strong> – {{guideline.handle}}</h3>
+		<h3 id="{{g_id}}">ガイドライン <strong>{{ guideline.num }}</strong> – {{guideline.handle}}</h3>
 		{{guideline.title}}
 	</div>
 		{% assign tsize = guideline.techniques | size %}
@@ -33,19 +33,19 @@
 
 		          {% if ssize >= 1 %}
 		            <div role="tabpanel" class="tbox tbox-sufficient tab-pane active" id="sc-{{ p }}{{ g }}-sufficient">
-		              {% include techlist.html techtitle="Sufficient Techniques" techniques=stech ttype="sufficient" %}
+		              {% include techlist.html techtitle="十分な達成方法" techniques=stech ttype="sufficient" %}
 		            </div>
 		          {% endif %}
 
 		          {% if asize >= 1 %}
 		            <div role="tabpanel" class="tbox tbox-advisory tab-pane active" id="sc-{{ p }}{{ g }}-advisory">
-		          {% include techlist.html techtitle="Advisory Techniques" techniques=atech ttype="advisory" %}
+		          {% include techlist.html techtitle="さらに対応が望まれる達成方法" techniques=atech ttype="advisory" %}
 		            </div>
 		          {% endif %}
 
 		          {% if fsize >= 1 %}
 		            <div role="tabpanel" class="tbox tbox-failure tab-pane active" id="sc-{{ p }}{{ g }}-failures">
-		              {% include techlist.html techtitle="Failures" techniques=ftech ttype="failure" %}
+		              {% include techlist.html techtitle="失敗例" techniques=ftech ttype="failure" %}
 		            </div>
 		          {% endif %}
 		        </div>

@@ -4,7 +4,7 @@
 
 {% if include.technique.and %}
   {% for technique in include.technique.and %}
-    <span class="{% include techniqueclass.html technique=technique %}">{% include techniquelink.html technique=technique %} {{technique.append}} {% if forloop.last %}{% else %}<strong>AND</strong>{% endif %}</span>
+    <span class="{% include techniqueclass.html technique=technique %}">{% include techniquelink.html technique=technique %} {{technique.append}} {% if forloop.last %}{% else %}<strong>及び</strong>{% endif %}</span>
   {% endfor %}
   {% if include.technique.using %}
     using one of the following techniques:
@@ -24,7 +24,7 @@
 {% else %}
   {% if include.technique.or %}
     {% for technique in include.technique.or %}
-      <span class="{% include techniqueclass.html technique=technique %}">{% include techniquelink.html technique=technique %} {{technique.append}} {% if forloop.last %}{% else %}<strong>OR</strong>{% endif %}</span>
+      <span class="{% include techniqueclass.html technique=technique %}">{% include techniquelink.html technique=technique %} {{technique.append}} {% if forloop.last %}{% else %}<strong>又は</strong>{% endif %}</span>
     {% endfor %}
     {% if include.technique.using %}
       using one of the following techniques:
@@ -43,7 +43,7 @@
     {% endfor %}
   {% else %}
     {% if shortname == 'future' %}
-      {{include.technique.title}} (future link) {{include.technique.append}}
+      {{include.technique.title}} (リンク追加予定) {{include.technique.append}}
     {% else %}
       {% if shortname == 'text' %}
         {{include.technique.title}}
@@ -66,7 +66,7 @@
       {% endif %}
     {% endif %}
     {% if include.technique.using %}
-      <i>using one of the following techniques:</i>
+      <i>次に挙げるいずれかを用いる:</i>
       {% for gr in include.technique.using %}
         {% if gr.group %}
           <p role="heading" aria-level="7">{{gr.group.title}}</p>
