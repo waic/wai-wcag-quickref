@@ -7,7 +7,7 @@ baseurl: "/wai-wcag-quickref/" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: yatil
 github_username:  yatil
-status: draft
+status: release # draft
 version: "2.5"
 
 techniqueurl: http://waic.jp/docs/WCAG-TECHS/
