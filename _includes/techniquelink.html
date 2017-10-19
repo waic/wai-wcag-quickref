@@ -27,7 +27,7 @@
       <span class="{% include techniqueclass.html technique=technique %}">{% include techniquelink.html technique=technique %} {{technique.append}} {% if forloop.last %}{% else %}<strong>又は</strong>{% endif %}</span>
     {% endfor %}
     {% if include.technique.using %}
-      using one of the following techniques:
+      次の達成方法のいずれかを用いる:
       <ul>
         {% for techniq in include.technique.using %}
           <li class="{% include techniqueclass.html technique=techniq %}">{% include techniquelink.html technique=techniq %}</li>
