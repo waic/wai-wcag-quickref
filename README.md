@@ -1,4 +1,4 @@
-# WCAG 2.0 本体、解説書および達成方法集
+# WCAG 2.0 クイックリファレンス
 
 [ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0 クイックリファレンス](http://waic.jp/docs/WCAG20/quickref/)のレポジトリです。
 
