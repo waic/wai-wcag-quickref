@@ -1,10 +1,10 @@
 ---
-title: About
+title: このツールについて
 ---
-This tool provides a customizable view of WCAG 2.0 resources, including:
+このツールは、以下を含む WCAG 2.0 リソースのカスタマイズ可能な一覧を提供する:
 
--   [Web Content Accessibility Guidelines (WCAG) 2.0](http://www.w3.org/TR/WCAG20/) web standard
--   [Techniques for WCAG 2.0](http://www.w3.org/TR/WCAG20-TECHS/) implementation guidance
--   [Understanding WCAG 2.0](http://www.w3.org/TR/UNDERSTANDING-WCAG20/) supporting information
+-   [Web Content Accessibility Guidelines (WCAG) 2.0](http://waic.jp/docs/WCAG20/Overview.html) ウェブ標準
+-   [WCAG 2.0 達成方法集](http://waic.jp/docs/WCAG-TECHS/Overview.html) 実装ガイダンス
+-   [WCAG 2.0 解説書](http://waic.jp/docs/UNDERSTANDING-WCAG20/Overview.html) 支援情報
 
-Background on these resources is provided in the [WCAG Overview](http://www.w3.org/WAI/intro/wcag.php) and [The WCAG 2.0 Documents](http://www.w3.org/WAI/intro/wcag20). For important information about techniques, see [Understanding Techniques for WCAG Success Criteria](http://www.w3.org/TR/2014/NOTE-UNDERSTANDING-WCAG20-20140916/understanding-techniques.html#understanding-techniques).
+これらのリソースの背景は、[WCAG Overview](http://www.w3.org/WAI/intro/wcag.php) および [The WCAG 2.0 Documents](http://www.w3.org/WAI/intro/wcag20)  で提供される。 達成方法に関する重要な情報については、[WCAG 達成基準の達成方法を理解する](http://waic.jp/docs/UNDERSTANDING-WCAG20/understanding-techniques.html#understanding-techniques)を参照のこと。

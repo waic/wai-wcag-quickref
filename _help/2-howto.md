@@ -1,15 +1,14 @@
 ---
-title: How to Use
+title: 使い方
 ---
-Select the “Filter” tab in the main menu to customize:
+カスタマイズするには、メインメニューの“Filter”タブを選択する:
 
-- **Tags:** Shows only success criteria associated with the selected tags.
+- **Tags:** 選択したタグに関連する達成基準のみを表示する。
 
-- **Levels:** Shows only success criteria for the selected levels.
+- **Levels:** 選択したレベルの達成基準のみを表示する。
 
-- **Technologies:** Shows only techniques for the selected technologies.
+- **Technologies:** 選択した技術のみを表示する。
 
-- **Techniques:** Shows only the types of techniques and/or failures selected.
+- **Techniques:** 選択した種類の達成方法及び／又は不適合事例のみを表示する。
 
-The **Share this view** button provides a link to this tool with the filters you have set.
-The SHARE buttons provide links to individual success criteria.
+**Share this view** ボタンは、設定したフィルターを適用したこのツールへのリンクを提供する。SHARE ボタンは、個別の達成基準へのリンクを提供する。
