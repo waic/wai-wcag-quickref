@@ -1,6 +1,6 @@
-# WCAG 2.0 クイックリファレンス
+# How to Meet WCAG 2 (クイックリファレンス)
 
-[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[WCAG 2.0 クイックリファレンス](http://waic.jp/docs/WCAG20/quickref/)のレポジトリです。
+[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、[How to Meet WCAG 2 (クイックリファレンス)](http://waic.jp/docs/WCAG20/quickref/)のレポジトリです。
 
 GitHub 上でビルドされたファイルは
 
@@ -20,9 +20,9 @@ rubyで動作するjekyllでビルドします。bundleが必要でしょう。
 
 ## 主要なディレクトリー・ファイル構成
 ```
-- _data/wcag2.json              # 達成方法集のタイトル
-- _include/               # サイトのパーツ構成ファイル
-- _help/    # ヘッダー部分のヘルプ
+- _data/wcag2.json      # 達成方法集のタイトル
+- _include/             # サイトのパーツ構成ファイル
+- _help/                # ヘッダー部分のヘルプ
 ```
 
 
