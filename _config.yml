@@ -8,7 +8,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: yatil
 github_username:  yatil
 status: release # draft
-version: "2.5"
+version: "2.6"
 
 techniqueurl: http://waic.jp/docs/WCAG-TECHS/
 
@@ -20,7 +20,7 @@ lsi: false
 # Build settings
 markdown: kramdown
 
-gems: ['jekyll-github-metadata']
+plugins: ['jekyll-github-metadata']
 repository: 'w3c/wai-wcag-quickref'
 
 compress_html:
